@@ -1,0 +1,10 @@
+"改行後に現在のインデントを引き継ぐ
+set autoindent
+
+"バックスペースを有効化
+set backspace=indent,eol,start
+
+"自動インデント幅
+set shiftwidth=4
+"インデント幅
+set softtabstop=4

@@ -1,0 +1,43 @@
+"vi互換モードを無効
+set nocompatible
+
+"エンコーディングの指定
+set encoding=utf-8
+scriptencoding utf-8
+
+"変更があったファイルを自動読み込み
+set autoread
+
+"保存されてないファイルがあるときは確認
+set confirm
+
+"ヤンクでクリップボードにコピー
+set clipboard=unnamed
+
+"スワップファイルを作成
+set directory=~/.vim/.swap
+set swapfile
+
+"バックアップファイルを作成しない
+set nobackup
+
+"undoを永続化
+set undodir=~/.vim/.undo
+set undofile
+
+"マウスを有効化
+set mouse=a
+
+"---------
+" 検索
+"---------
+
+"検索結果をハイライト
+set hlsearch
+"Esc二回でハイライトを無効化
+nnoremap <ESC><ESC> :nohlsearch<CR>
+"検索で大文字小文字を無視
+set ignorecase
+"大文字が含まれる場合は区別
+set smartcase
+

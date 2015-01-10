@@ -1,0 +1,47 @@
+"シンタックスハイライトを有効に
+syntax enable
+
+"256色使う
+set t_Co=256
+
+"カーソルの行を強調表示
+set cursorline
+highlight CursorLine term=reverse cterm=none ctermbg=242
+
+"括弧の対応を強調表示
+set showmatch
+
+"行番号を表示
+set number
+
+"折り返しを有効化
+set wrap
+"折り返し時にインデントする
+set breakindent
+"折り返し時に表示する文字
+set showbreak=>>>
+
+"タブ幅を設定
+set tabstop=4
+
+
+"全角space可視化
+function! ZenkakuSpace()
+  highlight ZenkakuSpace cterm=underline ctermfg=lightblue guibg=darkgray
+endfunction
+
+if has('syntax')
+  augroup ZenkakuSpace
+      autocmd!
+      autocmd ColorScheme * call ZenkakuSpace()
+      autocmd VimEnter,WinEnter,BufRead * let w:m1=matchadd('ZenkakuSpace', '　')
+  augroup END
+  call ZenkakuSpace()
+endif  
+
+"Tabによる補完とリスト表示
+set wildmenu
+set wildmode=longest,list:longest,full
+
+"履歴の件数
+set history=1000
