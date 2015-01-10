@@ -19,25 +19,27 @@ set wrap
 "折り返し時にインデントする
 set breakindent
 "折り返し時に表示する文字
-set showbreak=>>>
+set showbreak=>>>\ 
 
 "タブ幅を設定
 set tabstop=4
 
+"不可視文字を可視化
+set list
+set listchars=tab:\¦\ 
 
 "全角space可視化
 function! ZenkakuSpace()
-  highlight ZenkakuSpace cterm=underline ctermfg=lightblue guibg=darkgray
+	highlight ZenkakuSpace cterm=reverse
 endfunction
-
 if has('syntax')
-  augroup ZenkakuSpace
-      autocmd!
-      autocmd ColorScheme * call ZenkakuSpace()
-      autocmd VimEnter,WinEnter,BufRead * let w:m1=matchadd('ZenkakuSpace', '　')
-  augroup END
-  call ZenkakuSpace()
-endif  
+	augroup ZenkakuSpace
+		autocmd!
+		autocmd ColorScheme * call ZenkakuSpace()
+		autocmd VimEnter,WinEnter,BufRead * let w:m1=matchadd('ZenkakuSpace', '　')
+	augroup END
+	call ZenkakuSpace()
+endif
 
 "Tabによる補完とリスト表示
 set wildmenu

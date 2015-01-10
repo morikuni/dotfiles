@@ -5,6 +5,8 @@ set backspace=indent,eol,start
 "行末と行頭をカーソルで移動できるように
 set whichwrap=b,s,<,>,[,]
 
+
+
 "----------
 " インデント
 "----------
