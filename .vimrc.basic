@@ -28,6 +28,9 @@ set nobackup
 set undodir=~/.vim/.undo
 set undofile
 
+"ビープ音の代わりに画面をフラッシュ
+set visualbell
+
 "マウスを有効化
 set mouse=a
 
