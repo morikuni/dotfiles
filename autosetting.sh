@@ -10,7 +10,7 @@ mkdir ~/.vim/.swap
 dotfiles=(
 .vimrc
 .vimrc.basic 
-.vimrc.visual
+.vimrc.appearance
 .vimrc.edit
 .vimrc.bundle
 .vim
