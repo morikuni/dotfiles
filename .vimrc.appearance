@@ -19,7 +19,7 @@ set wrap
 "折り返し時にインデントする
 set breakindent
 "折り返し時に表示する文字
-set showbreak=>>>\ " 
+set showbreak=≫≫\ " 
 
 "タブ幅を設定
 set tabstop=4
