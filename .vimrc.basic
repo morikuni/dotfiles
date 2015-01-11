@@ -46,8 +46,6 @@ set scrolloff=8
 
 "検索結果をハイライト
 set hlsearch
-"Esc二回でハイライトを無効化
-nnoremap <ESC><ESC> :nohlsearch<CR>
 "検索で大文字小文字を無視
 set ignorecase
 "大文字が含まれる場合は区別

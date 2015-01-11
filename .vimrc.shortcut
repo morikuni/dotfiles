@@ -1,0 +1,5 @@
+
+"Esc二回でハイライトを無効化
+nnoremap <ESC><ESC> :nohlsearch<CR>
+
+

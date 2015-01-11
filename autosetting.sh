@@ -13,7 +13,7 @@ dotfiles=(
 .vimrc.appearance
 .vimrc.edit
 .vimrc.bundle
-.vim
+.vimrc.shortcut
 )
 for dotfile in ${dotfiles[@]}
 do

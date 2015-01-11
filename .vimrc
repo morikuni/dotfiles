@@ -6,3 +6,5 @@ source ~/.vimrc.basic
 source ~/.vimrc.appearance
 "編集機能の設定
 source ~/.vimrc.edit
+"ショートカットの設定
+source ~/.vimrc.shortcut
