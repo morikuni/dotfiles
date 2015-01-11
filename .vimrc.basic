@@ -8,6 +8,9 @@ scriptencoding utf-8
 "ファイル形式別プラグインのロードを有効化
 filetype plugin on
 
+"ファイル形式別のインデントをオフ
+filetype indent off
+
 "変更があったファイルを自動読み込み
 set autoread
 
