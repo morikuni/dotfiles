@@ -18,8 +18,10 @@ call neobundle#begin(expand('~/.vim/bundle/'))
 	NeoBundle 'Yggdroot/indentLine'
 
 	"複数行コメントアウト
-	NeoBundle "tyru/caw.vim"
+	NeoBundle 'tyru/caw.vim'
 
+	"Scalaのシンタックスハイライト
+	NeoBundle 'derekwyatt/vim-scala'
 call neobundle#end()
 
 filetype plugin indent on
@@ -106,12 +108,6 @@ endfunction
 function! MyMode()
 	return winwidth(0) > 60 ? lightline#mode() : ''
 endfunction
-
-"----------
-" indetLine
-"----------
-set listchars+=tab:\¦\  " 
-
 
 "----------
 " caw.vim

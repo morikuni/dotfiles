@@ -5,7 +5,8 @@ set backspace=indent,eol,start
 "行末と行頭をカーソルで移動できるように
 set whichwrap=b,s,<,>,[,]
 
-
+"Tabをスペースに変換しない
+set noexpandtab
 
 "----------
 " インデント
@@ -17,3 +18,9 @@ set shiftwidth=4
 "インデント幅
 set softtabstop=4
 
+
+"----------
+" 言語別の設定
+"----------
+
+autocmd FileType scala setlocal noexpandtab
