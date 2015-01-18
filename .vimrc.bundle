@@ -30,9 +30,15 @@ NeoBundleCheck
 "----------
 " nerdtree
 "----------
-let NERDTreeShowHidden = 1 " 隠しファイル表示
+" 隠しファイル表示
+let NERDTreeShowHidden = 1 
 "デフォルトでツリー表示"
-autocmd VimEnter * execute 'NERDTree'
+let input = expand("%")
+if isdirectory(input)
+	autocmd VimEnter * execute 'NERDTree '.input
+else
+	autocmd VimEnter * execute 'NERDTree '.expand("%:h")
+endif
 "引数なしで実行したとき、NERDTreeを実行
 let file_name = expand("%:p")
 if has('vim_starting') && file_name == ""
@@ -114,5 +120,4 @@ endfunction
 "----------
 nmap ,, <Plug>(caw:i:toggle)
 vmap ,, <Plug>(caw:i:toggle)
-
 
