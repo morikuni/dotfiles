@@ -37,8 +37,12 @@ set visualbell
 "マウスを有効化
 set mouse=a
 
-"スクロール時の上下オフセット
+"スクロール時のオフセット
 set scrolloff=8
+set sidescrolloff=32
+"スクロールする単位
+set sidescroll=1
+
 
 "---------
 " 検索
