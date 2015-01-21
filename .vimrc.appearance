@@ -6,7 +6,7 @@ set t_Co=256
 
 "カーソルの行を強調表示
 set cursorline
-highlight CursorLine term=reverse cterm=none ctermbg=242
+highlight CursorLine term=reverse cterm=none ctermbg=234
 
 "括弧の対応を強調表示
 set showmatch
