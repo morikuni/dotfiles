@@ -28,6 +28,9 @@ call neobundle#begin(expand('~/.vim/bundle/'))
 
 	"unite.vim
 	NeoBundle 'Shougo/unite.vim'
+
+	"最近開いたファイルをuniteで表示
+	NeoBundle 'Shougo/neomru.vim'
 	
 	"vimproc.vim
 	NeoBundle 'Shougo/vimproc.vim', {
@@ -49,18 +52,12 @@ NeoBundleCheck
 "----------
 " 隠しファイル表示
 let NERDTreeShowHidden = 1 
-"デフォルトでツリー表示"
-let input = expand("%")
-if isdirectory(input)
-	autocmd VimEnter * execute 'NERDTree '.input
-else
-	autocmd VimEnter * execute 'NERDTree '.expand("%:h")
-endif
 "引数なしで実行したとき、NERDTreeを実行
 let file_name = expand("%:p")
 if has('vim_starting') && file_name == ""
   autocmd VimEnter * execute 'NERDTree ./'
 endif
+nnoremap <C-t> :NERDTreeToggle<CR>
 
 "----------
 " molokai
@@ -155,9 +152,9 @@ let g:EasyMotion_use_migemo = 1
 " unite.vim
 "----------
 let g:unite_enable_start_insert=1
-nnoremap <silent> ,b :<C-u>Unite buffer<CR> 
-nnoremap <silent> ,s :<C-u>Unite grep:%<CR> 
-
+nnoremap <silent> ,b :Unite buffer<CR><C-u>
+nnoremap <silent> ,s :Unite grep:%<CR><C-u>
+nnoremap <silent> ,r :Unite file_mru<CR><C-u>
 
 
 
