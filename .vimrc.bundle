@@ -59,11 +59,12 @@ if has('vim_starting')
 		autocmd VimEnter * execute 'NERDTree ./'
 	elseif isdirectory(file_name)
 		autocmd VimEnter * execute 'NERDTree '.file_name
+		autocmd VimEnter * execute 'NERDTreeClose'
 	else
 		let parent_dir = expand("%:h")
 		autocmd VimEnter * execute 'NERDTree '.parent_dir
+		autocmd VimEnter * execute 'NERDTreeClose'
 	endif
-	autocmd VimEnter * execute 'NERDTreeClose'
 endif
 nnoremap <C-t> :NERDTreeToggle<CR>
 
