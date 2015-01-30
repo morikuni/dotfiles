@@ -164,6 +164,7 @@ let g:unite_enable_start_insert=1
 nnoremap <silent> ,b :Unite buffer<CR><C-u>
 nnoremap <silent> ,s :Unite grep:%<CR><C-u>
 nnoremap <silent> ,r :Unite file_mru<CR><C-u>
+nnoremap <silent> ,g :Unite grep:.<CR><C-u>
 
 
 
