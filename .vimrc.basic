@@ -21,14 +21,14 @@ set confirm
 set clipboard=unnamed
 
 "スワップファイルを作成
-set directory=~/.vim/.swap
+set directory=~/.vim/swap
 set swapfile
 
 "バックアップファイルを作成しない
 set nobackup
 
 "undoを永続化
-set undodir=~/.vim/.undo
+set undodir=~/.vim/undo
 set undofile
 
 "ビープ音の代わりに画面をフラッシュ

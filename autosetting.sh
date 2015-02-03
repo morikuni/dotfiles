@@ -3,8 +3,8 @@
 #vim用ディレクトリの作成
 mkdir ~/.vim
 mkdir ~/.vim/bundle
-mkdir ~/.vim/.undo
-mkdir ~/.vim/.swap
+mkdir ~/.vim/undo
+mkdir ~/.vim/swap
 
 #dotファイルのシンボリックリンクを作成
 dotfiles=(
