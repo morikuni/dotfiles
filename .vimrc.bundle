@@ -6,7 +6,7 @@ call neobundle#begin(expand('~/.vim/bundle/'))
 	NeoBundleFetch 'Shougo/neobundle.vim'
 
 	"ファイルブラウザ
-	NeoBundle 'scrooloose/nerdtree'
+	NeoBundle 'Shougo/vimfiler'
 
 	"カラースキーマ
 	NeoBundle 'tomasr/molokai'
@@ -48,25 +48,10 @@ filetype plugin indent on
 NeoBundleCheck
 
 "----------
-" nerdtree
+" vimfiler
 "----------
-" 隠しファイル表示
-let NERDTreeShowHidden = 1 
-"引数なしで実行したとき、NERDTreeを実行
-let file_name = expand("%:p")
-if has('vim_starting')
-	if file_name == ""
-		autocmd VimEnter * execute 'NERDTree ./'
-	elseif isdirectory(file_name)
-		autocmd VimEnter * execute 'NERDTree '.file_name
-		autocmd VimEnter * execute 'NERDTreeClose'
-	else
-		let parent_dir = expand("%:h")
-		autocmd VimEnter * execute 'NERDTree '.parent_dir
-		autocmd VimEnter * execute 'NERDTreeClose'
-	endif
-endif
-nnoremap <C-t> :NERDTreeToggle<CR>
+let g:vimfiler_as_default_explorer = 1
+nnoremap <C-e> :VimFiler<CR>
 
 "----------
 " molokai
