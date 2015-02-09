@@ -95,7 +95,7 @@ map ,, <Plug>(caw:i:toggle)
 "デフォルトのショートカットを無効化
 let g:EasyMotion_do_mapping = 0
 "sキーで検索開始
-map s <Plug>(easymotion-s2)
+map s <Plug>(easymotion-sn)
 "スマートケースを使用
 let g:EasyMotion_smartcase = 1
 "アルファベットで日本語を検索できる
