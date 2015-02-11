@@ -14,9 +14,6 @@ call neobundle#begin(expand('~/.vim/bundle/'))
 	"ステータスバーの拡張
 	NeoBundle 'itchyny/lightline.vim'
 
-	"インデントを可視化
-	NeoBundle 'Yggdroot/indentLine'
-
 	"複数行コメントアウト
 	NeoBundle 'tyru/caw.vim'
 
