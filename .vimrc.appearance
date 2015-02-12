@@ -17,9 +17,6 @@ set number
 "折り返しを無効化
 set nowrap
 
-"タブ幅を設定
-set tabstop=4
-
 "不可視文字を可視化
 set list
 set listchars=tab:\¦\ ,trail:-

@@ -7,10 +7,6 @@ set whichwrap=b,s,<,>,[,]
 
 "Tabをスペースに変換しない
 set noexpandtab
-
-"----------
-" インデント
-"----------
 "改行後に現在のインデントを引き継ぐ
 set autoindent
 "より賢いインデント
@@ -19,6 +15,8 @@ set smartindent
 set shiftwidth=4
 "インデント幅
 set softtabstop=4
+"タブ幅を設定
+set tabstop=4
 
 
 "----------
