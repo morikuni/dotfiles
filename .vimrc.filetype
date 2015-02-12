@@ -1,0 +1,6 @@
+augroup FileTypeSetting
+	autocmd!
+	autocmd FileType * set noexpandtab
+
+	autocmd BufNewFile,BufRead *.{md,mdwn,mkd,mkdn,mark*} set filetype=markdown
+augroup END

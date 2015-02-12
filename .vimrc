@@ -8,3 +8,5 @@ source ~/.vimrc.appearance
 source ~/.vimrc.edit
 "ショートカットの設定
 source ~/.vimrc.shortcut
+"ファイル形式毎の設定
+source ~/.vimrc.filetype

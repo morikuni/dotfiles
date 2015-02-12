@@ -14,6 +14,7 @@ dotfiles=(
 .vimrc.edit
 .vimrc.bundle
 .vimrc.shortcut
+.vimrc.filetype
 )
 for dotfile in ${dotfiles[@]}
 do

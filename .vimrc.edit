@@ -19,8 +19,3 @@ set softtabstop=4
 set tabstop=4
 
 
-"----------
-" 言語別の設定
-"----------
-
-autocmd FileType scala setlocal noexpandtab
