@@ -103,8 +103,6 @@ let g:EasyMotion_do_mapping = 0
 map s <Plug>(easymotion-sn)
 "スマートケースを使用
 let g:EasyMotion_smartcase = 1
-"アルファベットで日本語を検索できる
-let g:EasyMotion_use_migemo = 1
 
 
 "----------
