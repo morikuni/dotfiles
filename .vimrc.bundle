@@ -83,7 +83,7 @@ colorscheme molokai
 set laststatus=2
 let g:lightline = {
 	\ 'active': {
-	\	'left': [ [ 'mode', 'paste', 'modified' ], [ 'readonly', 'relativepath' ] ],
+	\	'left': [ [ 'mode', 'paste', 'readonly', 'modified'], [ 'relativepath' ] ],
 	\	'right': [ [ 'percent' ], [ 'fileformat', 'fileencoding', 'filetype' ] ] 
 	\ },
 	\ 'inactive': {
