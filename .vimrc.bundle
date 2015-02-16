@@ -52,6 +52,9 @@ call neobundle#begin(expand("~/.vim/bundle/"))
 	"ヤンク履歴をさかのぼってペースト"
 	NeoBundle "LeafCage/yankround.vim"
 
+	"trailを赤色表示"
+	NeoBundle "bronson/vim-trailing-whitespace"
+
 call neobundle#end()
 
 filetype plugin indent on
