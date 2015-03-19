@@ -216,3 +216,9 @@ nmap <C-n> <Plug>(yankround-next)
 " vim-trailing-whitespace
 "----------
 let g:extra_whitespace_ignored_filetypes = ["unite"]
+
+
+"----------
+" supertab
+"----------
+let g:SuperTabDefaultCompletionType = "<c-n>"
