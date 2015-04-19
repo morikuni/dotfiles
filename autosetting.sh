@@ -15,6 +15,7 @@ dotfiles=(
 .vimrc.bundle
 .vimrc.shortcut
 .vimrc.filetype
+.tmux.conf
 )
 for dotfile in ${dotfiles[@]}
 do
