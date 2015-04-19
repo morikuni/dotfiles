@@ -4,3 +4,6 @@ nnoremap <ESC><ESC> :nohlsearch<CR>
 
 "前回のインサートテキストを貼り付けを無効化
 imap <C-@> <NOP>
+
+"\で行末移動
+nmap \ $
