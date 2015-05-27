@@ -1,0 +1,50 @@
+export LANG=ja_JP.UTF-8
+
+PROMPT="[%F{cyan}%m%f][%F{magenta}%*%f][%F{yellow}%c%f]%# "
+
+#履歴ファイル
+HISTFILE=~/.zsh_history
+#メモリ上に載せる履歴数
+HISTSIZE=10000
+#ファイルに保存する履歴数
+SAVEHIST=100000
+#zsh間で履歴を同期
+setopt share_history
+#直前と同じ履歴は保存しない
+setopt hist_ignore_dups
+#履歴に時間も記録
+setopt extended_history
+
+#ビープ音無効
+setopt no_beep
+
+#Ctrl+Dで終了しないように
+setopt ignore_eof
+
+#コマンド名の間違いを指摘
+setopt correct
+
+#補完を有効に
+autoload -U compinit
+compinit
+#Shift-Tabで逆方向に補完
+bindkey "^[[Z" reverse-menu-complete
+#補完で小文字でも大文字にマッチさせる
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
+
+#cd履歴をスタックにpushする
+setopt auto_pushd
+#重複するディレクトリはpushしない
+setopt pushd_ignore_dups
+
+#ls等に色付け
+export CLICOLOR=true
+
+#Ctrl+vでvimでコマンドを編集できるように
+EDITOR="vim"
+autoload -Uz edit-command-line
+zle -N edit-command-line
+bindkey '^v' edit-command-line
+#viライクキーバインド
+bindkey -v
+

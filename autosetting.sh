@@ -16,10 +16,11 @@ dotfiles=(
 .vimrc.shortcut
 .vimrc.filetype
 .tmux.conf
+.zshrc
 )
 for dotfile in ${dotfiles[@]}
 do
-	ln -sf ~/dotfiles/$dotfile ~/$dotfile 
+	ln -sf ~/dotfiles/$dotfile ~/$dotfile
 done
 
 #NeoBundleをインストール
