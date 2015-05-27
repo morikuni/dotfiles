@@ -24,6 +24,11 @@ setopt ignore_eof
 #コマンド名の間違いを指摘
 setopt correct
 
+
+#homebrewの補完
+if [ -e /usr/local/share/zsh-completions ]; then
+	fpath=(/usr/local/share/zsh-completions $fpath)
+fi
 #補完を有効に
 autoload -U compinit
 compinit
@@ -45,6 +50,12 @@ EDITOR="vim"
 autoload -Uz edit-command-line
 zle -N edit-command-line
 bindkey '^v' edit-command-line
-#viライクキーバインド
-bindkey -v
+#emacsライクキーバインド(viだとノーマルモードに入った後で編集できなくなる)
+bindkey -e
 
+#安全に
+alias cp="cp -i"
+alias mv="mv -i"
+if [ -x "`which rmtrash 2>/dev/null`" ]; then
+	alias rm="rmtrash"
+fi
