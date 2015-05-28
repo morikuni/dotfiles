@@ -1,7 +1,8 @@
 export LANG=ja_JP.UTF-8
 
-PROMPT="[%F{magenta}%*%f][%F{cyan}%c%f]%(?,%F{green},%F{red})%#%f "
-RPROMPT="[%F{yellow}$HOST%f]"
+PROMPT="
+[%F{magenta}%*%f] %F{yellow}%n%f at %F{green}%M%f in %F{cyan}%~%f
+%(?,%F{green},%F{red})%#%f "
 SPROMPT="もしかして: %r    [(y)es, (n)o, (a)bort, (e)xit] > "
 
 #履歴ファイル
