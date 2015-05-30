@@ -42,6 +42,12 @@ zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 zstyle ':completion:*:default' menu select=1
 #globを展開しないで補完
 setopt glob_complete
+#履歴から補完
+autoload history-search-end
+zle -N history-beginning-search-backward-end history-search-end
+zle -N history-beginning-search-forward-end history-search-end
+bindkey "^P" history-beginning-search-backward-end
+bindkey "^N" history-beginning-search-forward-end
 
 #"/"を単語区切りとする
 WORDCHARS="*?_-.[]~=&;!#$%^(){}<>"
