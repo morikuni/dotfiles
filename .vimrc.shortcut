@@ -8,3 +8,7 @@ inoremap <C-@> <NOP>
 "\で行末移動
 nnoremap \ $
 vnoremap \ $
+
+"インサートモードでemacsっぽく
+inoremap <C-a> <Home>
+inoremap <C-e> <End>
