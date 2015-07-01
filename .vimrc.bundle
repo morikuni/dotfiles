@@ -40,20 +40,23 @@ call neobundle#begin(expand("~/.vim/bundle/"))
 	\	 },
 	\ }
 
-	"Tabで補完"
+	"Tabで補完
 	NeoBundle "ervandew/supertab"
 
-	"undo履歴をツリー表示"
+	"undo履歴をツリー表示
 	NeoBundle "sjl/gundo.vim"
 
 	"Markdownのリアルタイムプレビュー
 	NeoBundle "kannokanno/previm"
 
-	"ヤンク履歴をさかのぼってペースト"
+	"ヤンク履歴をさかのぼってペースト
 	NeoBundle "LeafCage/yankround.vim"
 
 	"trailを赤色表示"
 	NeoBundle "bronson/vim-trailing-whitespace"
+
+	"tagを一覧表示
+	NeoBundle "majutsushi/tagbar"
 
 call neobundle#end()
 
@@ -222,3 +225,25 @@ let g:extra_whitespace_ignored_filetypes = ["unite"]
 " supertab
 "----------
 let g:SuperTabDefaultCompletionType = "<c-n>"
+
+
+"----------
+" tagbar
+"----------
+nnoremap <F8> :TagbarToggle<CR>
+let g:tagbar_type_scala = {
+	\ 'ctagstype' : 'scala',
+	\ 'sro'       : '.',
+	\ 'kinds'     : [
+		\ 'p:packages',
+		\ 'T:types:1',
+		\ 't:traits',
+		\ 'o:objects',
+		\ 'O:case objects',
+		\ 'c:classes',
+		\ 'C:case classes',
+		\ 'm:methods',
+		\ 'V:values:1',
+		\ 'v:variables:1'
+	\ ]
+\ }
