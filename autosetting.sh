@@ -17,6 +17,7 @@ dotfiles=(
 .vimrc.filetype
 .tmux.conf
 .zshrc
+.ctags
 )
 for dotfile in ${dotfiles[@]}
 do
