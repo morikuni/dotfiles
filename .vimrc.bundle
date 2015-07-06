@@ -58,6 +58,9 @@ call neobundle#begin(expand("~/.vim/bundle/"))
 	"tagを一覧表示
 	NeoBundle "majutsushi/tagbar"
 
+	"インクリメンタル検索を便利に
+	NeoBundle "haya14busa/incsearch.vim"
+
 call neobundle#end()
 
 filetype plugin indent on
@@ -247,3 +250,19 @@ let g:tagbar_type_scala = {
 		\ 'v:variables:1'
 	\ ]
 \ }
+
+
+"----------
+" incsearch
+"----------
+map /  <Plug>(incsearch-forward)
+map g/ <Plug>(incsearch-stay)
+let g:incsearch#auto_nohlsearch = 1
+map n  <Plug>(incsearch-nohl-n)
+map N  <Plug>(incsearch-nohl-N)
+map *  <Plug>(incsearch-nohl-*)
+map #  <Plug>(incsearch-nohl-#)
+map g* <Plug>(incsearch-nohl-g*)
+map g# <Plug>(incsearch-nohl-g#)
+
+
