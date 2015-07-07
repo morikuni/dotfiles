@@ -61,9 +61,6 @@ call neobundle#begin(expand("~/.vim/bundle/"))
 	"インクリメンタル検索を便利に
 	NeoBundle "haya14busa/incsearch.vim"
 
-	"シンタックスチェック
-	NeoBundle "scrooloose/syntastic"
-
 	"Gitの編集差分を表示
 	NeoBundle "airblade/vim-gitgutter"
 
@@ -273,16 +270,6 @@ map *  <Plug>(incsearch-nohl-*)
 map #  <Plug>(incsearch-nohl-#)
 map g* <Plug>(incsearch-nohl-g*)
 map g# <Plug>(incsearch-nohl-g#)
-
-"----------
-" Syntastic
-"----------
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 0
-let g:syntastic_check_on_wq = 0
-let g:syntastic_error_symbol = "✗"
-let g:syntastic_warning_symbol = "⚠"
 
 "----------
 " neocomplete
