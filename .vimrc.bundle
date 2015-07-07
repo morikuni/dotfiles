@@ -71,6 +71,9 @@ call neobundle#begin(expand('~/.vim/bundle/'))
 	NeoBundle 'tpope/vim-surround'
 	NeoBundle 'tpope/vim-repeat'
 
+	"検索時に総数と現在位置を表示
+	NeoBundle 'osyo-manga/vim-anzu'
+
 call neobundle#end()
 
 filetype plugin indent on
@@ -263,13 +266,13 @@ let g:tagbar_type_scala = {
 
 
 "----------
-" incsearch
+" incsearch & (anzu)
 "----------
 map /  <Plug>(incsearch-forward)
 map g/ <Plug>(incsearch-stay)
 let g:incsearch#auto_nohlsearch = 1
-map n  <Plug>(incsearch-nohl-n)
-map N  <Plug>(incsearch-nohl-N)
+map n  <Plug>(incsearch-nohl-n)<Plug>(anzu-update-search-status-with-echo)
+map N  <Plug>(incsearch-nohl-N)<Plug>(anzu-update-search-status-with-echo)
 map *  <Plug>(incsearch-nohl-*)
 map #  <Plug>(incsearch-nohl-#)
 map g* <Plug>(incsearch-nohl-g*)
