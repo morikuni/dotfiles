@@ -25,11 +25,11 @@ set listchars=tab:\¦\ ,trail:-
 function! ZenkakuSpace()
 	highlight ZenkakuSpace cterm=reverse
 endfunction
-if has("syntax")
+if has('syntax')
 	augroup ZenkakuSpace
 		autocmd!
 		autocmd ColorScheme * call ZenkakuSpace()
-		autocmd VimEnter,WinEnter,BufRead * let w:m1=matchadd("ZenkakuSpace", "　")
+		autocmd VimEnter,WinEnter,BufRead * let w:m1=matchadd('ZenkakuSpace', '　')
 	augroup END
 	call ZenkakuSpace()
 endif
