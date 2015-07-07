@@ -24,5 +24,8 @@ do
 	ln -sf ~/dotfiles/$dotfile ~/$dotfile
 done
 
+#copyするもの
+cp -r ~/dotfiles/dict ~/.vim/
+
 #NeoBundleをインストール
 git clone https://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
