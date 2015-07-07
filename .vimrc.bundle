@@ -62,7 +62,10 @@ call neobundle#begin(expand("~/.vim/bundle/"))
 	NeoBundle "haya14busa/incsearch.vim"
 
 	"シンタックスチェック
-	NeoBundle 'scrooloose/syntastic'
+	NeoBundle "scrooloose/syntastic"
+
+	"Gitの編集差分を表示
+	NeoBundle "airblade/vim-gitgutter"
 
 call neobundle#end()
 
