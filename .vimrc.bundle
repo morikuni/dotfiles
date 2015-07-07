@@ -61,6 +61,9 @@ call neobundle#begin(expand("~/.vim/bundle/"))
 	"インクリメンタル検索を便利に
 	NeoBundle "haya14busa/incsearch.vim"
 
+	"シンタックスチェック
+	NeoBundle 'scrooloose/syntastic'
+
 call neobundle#end()
 
 filetype plugin indent on
@@ -265,4 +268,12 @@ map #  <Plug>(incsearch-nohl-#)
 map g* <Plug>(incsearch-nohl-g*)
 map g# <Plug>(incsearch-nohl-g#)
 
-
+"----------
+" Syntastic
+"----------
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+let g:syntastic_error_symbol = "✗"
+let g:syntastic_warning_symbol = "⚠"
