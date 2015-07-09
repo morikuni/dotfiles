@@ -1,4 +1,3 @@
-
 if has('vim_starting')
   set runtimepath+=~/.vim/bundle/neobundle.vim
 endif
@@ -77,6 +76,9 @@ call neobundle#begin(expand('~/.vim/bundle/'))
 
 	"括弧などを補完
 	NeoBundle 'jiangmiao/auto-pairs'
+
+	"ウインドウを移動したときにサイズを自動調整
+	NeoBundle 'justincampbell/vim-eighties'
 
 call neobundle#end()
 
@@ -286,3 +288,9 @@ if !exists('g:neocomplete#sources#dictionary#dictionaries')
 	let g:neocomplete#sources#dictionary#dictionaries = {}
 endif
 let g:neocomplete#sources#dictionary#dictionaries.scala = '~/.vim/dict/scala.dict'
+
+"----------
+" eighties
+"----------
+let g:eighties_enabled = 1
+let g:eighties_minimum_width = 100
