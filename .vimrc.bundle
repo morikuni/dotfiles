@@ -75,6 +75,9 @@ call neobundle#begin(expand('~/.vim/bundle/'))
 	"検索時に総数と現在位置を表示
 	NeoBundle 'osyo-manga/vim-anzu'
 
+	"括弧などを補完
+	NeoBundle 'jiangmiao/auto-pairs'
+
 call neobundle#end()
 
 filetype plugin indent on
@@ -105,7 +108,7 @@ set laststatus=2
 let g:lightline = {
 	\ 'active': {
 	\	'left': [ [ 'mode' ], [ 'filename' ] ],
-	\	'right': [ [ 'lineinfo' ], [ 'fileinfo' ] ] 
+	\	'right': [ [ 'lineinfo' ], [ 'fileinfo' ] ]
 	\ },
 	\ 'inactive': {
 	\	'left': [ ['filename'] ],
