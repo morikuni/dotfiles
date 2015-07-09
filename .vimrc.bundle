@@ -190,6 +190,7 @@ nnoremap <silent> ,b :Unite buffer<CR><C-u>
 nnoremap <silent> ,s :Unite grep:%<CR><C-u>
 nnoremap <silent> ,r :Unite file_mru<CR><C-u>
 nnoremap <silent> ,g :Unite grep:.<CR><C-u>
+nnoremap <silent> ,c :UniteResume<CR><C-u>
 
 "Uniteのgrepにagを使う
 if executable('ag')
