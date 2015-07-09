@@ -60,6 +60,7 @@ call neobundle#begin(expand('~/.vim/bundle/'))
 
 	"インクリメンタル検索を便利に
 	NeoBundle 'haya14busa/incsearch.vim'
+	NeoBundle 'haya14busa/incsearch-easymotion.vim'
 
 	"Gitの編集差分を表示
 	NeoBundle 'airblade/vim-gitgutter'
@@ -96,8 +97,6 @@ autocmd FileType vimfiler nmap <buffer> <Left> <Plug>(vimfiler_smart_h)
 " molokai
 "----------
 colorscheme molokai
-
-
 
 "----------
 " lightline
@@ -178,18 +177,6 @@ endfunction
 "----------
 map ,, <Plug>(caw:i:toggle)
 
-
-"----------
-" EasyMotion
-"----------
-"デフォルトのショートカットを無効化
-let g:EasyMotion_do_mapping = 0
-"sキーで検索開始
-map s <Plug>(easymotion-sn)
-"スマートケースを使用
-let g:EasyMotion_smartcase = 1
-
-
 "----------
 " unite.vim
 "----------
@@ -212,16 +199,12 @@ endif
 nnoremap <F5> :GundoToggle<CR>
 let g:gundo_close_on_revert=1
 
-
-
 "----------
 " previm
 "----------
 if has('mac')
 	let g:previm_open_cmd = 'open -a Safari'
 endif
-
-
 
 "----------
 " yankround
@@ -236,12 +219,10 @@ nmap <C-n> <Plug>(yankround-next)
 "----------
 let g:extra_whitespace_ignored_filetypes = ['unite']
 
-
 "----------
 " supertab
 "----------
 let g:SuperTabDefaultCompletionType = '<c-n>'
-
 
 "----------
 " tagbar
@@ -266,7 +247,15 @@ let g:tagbar_type_scala = {
 
 
 "----------
-" incsearch & (anzu)
+" EasyMotion
+"----------
+"デフォルトのショートカットを無効化
+let g:EasyMotion_do_mapping = 0
+"スマートケースを使用
+let g:EasyMotion_smartcase = 1
+
+"----------
+" incsearch & (anzu) & easymotion
 "----------
 map /  <Plug>(incsearch-forward)
 map g/ <Plug>(incsearch-stay)
@@ -277,6 +266,7 @@ map *  <Plug>(incsearch-nohl-*)
 map #  <Plug>(incsearch-nohl-#)
 map g* <Plug>(incsearch-nohl-g*)
 map g# <Plug>(incsearch-nohl-g#)
+map s <Plug>(incsearch-easymotion-/)
 
 "----------
 " neocomplete
