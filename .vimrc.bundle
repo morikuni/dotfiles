@@ -294,3 +294,4 @@ let g:neocomplete#sources#dictionary#dictionaries.scala = '~/.vim/dict/scala.dic
 "----------
 let g:eighties_enabled = 1
 let g:eighties_minimum_width = 100
+let g:eighties_bufname_additional_patterns = ['__Tagbar__', '__Gundo__', '__Gundo_Preview__']
