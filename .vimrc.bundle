@@ -74,9 +74,6 @@ call neobundle#begin(expand('~/.vim/bundle/'))
 	"検索時に総数と現在位置を表示
 	NeoBundle 'osyo-manga/vim-anzu'
 
-	"括弧などを補完
-	NeoBundle 'jiangmiao/auto-pairs'
-
 	"ウインドウを移動したときにサイズを自動調整
 	NeoBundle 'justincampbell/vim-eighties'
 
