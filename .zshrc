@@ -87,3 +87,10 @@ fancy-ctrl-z () {
 }
 zle -N fancy-ctrl-z
 bindkey '^Z' fancy-ctrl-z
+
+#コマンドを実行した時にプロンプトを更新(表示時間を更新)
+re-prompt() {
+    zle .reset-prompt
+    zle .accept-line
+}
+zle -N accept-line re-prompt
