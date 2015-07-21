@@ -94,3 +94,6 @@ re-prompt() {
     zle .accept-line
 }
 zle -N accept-line re-prompt
+
+#/usr/local/binにパスを通す
+path=(/usr/local/bin(N-/) $path)
