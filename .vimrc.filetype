@@ -1,8 +1,9 @@
 "ファイル形式別プラグインとインデントを有効化
-filetype plugin indent off
+filetype plugin indent on
 
 augroup FileTypeSetting
 	autocmd!
 
 	autocmd BufNewFile,BufRead *.{md,mdwn,mkd,mkdn,mark*} set filetype=markdown
+	autocmd FileType scala setlocal sw=2 sts=2 ts=2 expandtab
 augroup END
