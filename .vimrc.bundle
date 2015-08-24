@@ -77,6 +77,10 @@ call neobundle#begin(expand('~/.vim/bundle/'))
 	"ウインドウを移動したときにサイズを自動調整
 	NeoBundle 'justincampbell/vim-eighties'
 
+	"インデント可視化
+	NeoBundle 'Yggdroot/indentLine'
+
+
 call neobundle#end()
 
 filetype plugin indent on
