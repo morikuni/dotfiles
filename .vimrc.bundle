@@ -191,6 +191,7 @@ nnoremap <silent> ,b :<C-u>Unite buffer<CR>
 nnoremap <silent> ,s :<C-u>Unite grep:% -no-quit<CR>
 nnoremap <silent> ,r :<C-u>Unite file_mru<CR>
 nnoremap <silent> ,g :<C-u>Unite grep:. -no-quit<CR>
+nnoremap <silent> ,f :<C-u>Unite find<CR>
 
 "Uniteのgrepにagを使う
 if executable('ag')
