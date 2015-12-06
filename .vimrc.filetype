@@ -6,4 +6,5 @@ augroup FileTypeSetting
 
 	autocmd BufNewFile,BufRead *.{md,mdwn,mkd,mkdn,mark*} set filetype=markdown
 	autocmd FileType scala setlocal sw=2 sts=2 ts=2 expandtab
+	autocmd FileType ruby setlocal sw=2 sts=2 ts=2 expandtab
 augroup END
