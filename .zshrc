@@ -97,3 +97,6 @@ zle -N accept-line re-prompt
 
 #/usr/local/binにパスを通す
 path=(/usr/local/bin(N-/) $path)
+
+#Cargoにパスを通す
+path=(~/.cargo/bin $path)
