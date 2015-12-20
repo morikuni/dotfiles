@@ -80,7 +80,7 @@ call neobundle#begin(expand('~/.vim/bundle/'))
 	"インデント可視化
 	NeoBundle 'Yggdroot/indentLine'
 
-	"Rust"
+	"Rust
 	NeoBundle 'rust-lang/rust.vim'
 
 call neobundle#end()
@@ -303,7 +303,3 @@ let g:eighties_enabled = 1
 let g:eighties_minimum_width = 100
 let g:eighties_bufname_additional_patterns = ['__Tagbar__', '__Gundo__', '__Gundo_Preview__']
 
-"----------
-" rust-vim
-"----------
-let g:rustfmt_autosave = 1
