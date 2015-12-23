@@ -37,6 +37,8 @@ set sidescrolloff=16
 "スクロールする単位
 set sidescroll=1
 
+"補完の表示設定
+set completeopt=menu
 
 "---------
 " 検索

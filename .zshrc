@@ -100,3 +100,7 @@ path=(/usr/local/bin(N-/) $path)
 
 #Cargoにパスを通す
 path=(~/.cargo/bin $path)
+
+#GOPATHの設定
+export GOPATH=~/go
+path=($GOPATH/bin $path)
