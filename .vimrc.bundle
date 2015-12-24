@@ -306,3 +306,11 @@ let g:eighties_enabled = 1
 let g:eighties_minimum_width = 100
 let g:eighties_bufname_additional_patterns = ['__Tagbar__', '__Gundo__', '__Gundo_Preview__']
 
+"----------
+" vim-go
+"----------
+let g:go_highlight_functions = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_structs = 1
+let g:go_highlight_operators = 1
+let g:go_highlight_build_constraints = 1
