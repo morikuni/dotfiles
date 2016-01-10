@@ -86,6 +86,12 @@ call neobundle#begin(expand('~/.vim/bundle/'))
 	"Go
 	NeoBundle 'fatih/vim-go'
 
+	"Haskell(Syntax + Indent)
+	NeoBundle 'neovimhaskell/haskell-vim'
+
+	"Haskell(Completion)
+	NeoBundle 'eagletmt/neco-ghc'
+
 call neobundle#end()
 
 filetype plugin indent on
@@ -235,7 +241,7 @@ let g:extra_whitespace_ignored_filetypes = ['unite']
 "----------
 " supertab
 "----------
-let g:SuperTabDefaultCompletionType = '<c-n>'
+let g:SuperTabDefaultCompletionType = '<c-x><c-o>'
 
 "----------
 " tagbar
@@ -314,3 +320,12 @@ let g:go_highlight_methods = 1
 let g:go_highlight_structs = 1
 let g:go_highlight_operators = 1
 let g:go_highlight_build_constraints = 1
+
+"----------
+" neco-ghc
+"----------
+let g:haskellmode_completion_ghc = 0
+augroup FileTypeSettingNeco
+	autocmd!
+	autocmd FileType haskell setlocal omnifunc=necoghc#omnifunc
+augroup END

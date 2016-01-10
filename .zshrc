@@ -104,3 +104,6 @@ path=(~/.cargo/bin $path)
 #GOPATHの設定
 export GOPATH=~/go
 path=($GOPATH/bin $path)
+
+#Stackにパスを通す
+path=(~/.local/bin $path)
