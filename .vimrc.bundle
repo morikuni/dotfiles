@@ -241,7 +241,7 @@ let g:extra_whitespace_ignored_filetypes = ['unite']
 "----------
 " supertab
 "----------
-let g:SuperTabDefaultCompletionType = '<c-x><c-o>'
+let g:SuperTabDefaultCompletionType = '<c-n>'
 
 "----------
 " tagbar
