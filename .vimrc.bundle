@@ -301,7 +301,7 @@ let g:neocomplete#sources._ = ['buffer', 'member', 'dictionary', 'file', 'omni']
 if !exists('g:neocomplete#sources#omni#input_patterns')
 	let g:neocomplete#sources#omni#input_patterns = {}
 endif
-let g:neocomplete#sources#omni#input_patterns.haskell = '[^.[:digit:] *\t]\.\w*'
+let g:neocomplete#sources#omni#input_patterns.haskell = '\%(\u\w*\.\)\+[[:alnum:]_'']*\|[[:alpha:]_''][[:alnum:]_'']*'
 if !exists('g:neocomplete#sources#dictionary#dictionaries')
 	let g:neocomplete#sources#dictionary#dictionaries = {}
 endif
