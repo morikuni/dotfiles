@@ -40,6 +40,9 @@ set sidescroll=1
 "補完の表示設定
 set completeopt=menu
 
+"保存していなくても画面を切り替えられる
+set hidden
+
 "---------
 " 検索
 "---------
