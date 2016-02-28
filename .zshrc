@@ -110,3 +110,10 @@ path=($GOPATH/bin $path)
 
 #Stackにパスを通す
 path=(~/.local/bin $path)
+
+#CPANの設定
+path=(~/perl5/bin $path)
+export PERL5LIB=~/perl5/lib/perl5
+export PERL_LOCAL_LIB_ROOT=~/perl5
+export PERL_MB_OPT="--install_base \"~/perl5\""
+export PERL_MM_OPT="INSTALL_BASE=~/perl5"
