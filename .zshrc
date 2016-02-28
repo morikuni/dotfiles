@@ -1,5 +1,8 @@
 export LANG=ja_JP.UTF-8
 
+#.zshrc.localがあれば読み込む
+[ -f ~/.zshrc.local ] && source ~/.zshrc.local
+
 PROMPT="
 [%F{magenta}%*%f] %F{yellow}%n%f at %F{green}%M%f in %F{cyan}%~%f
 %(?,%F{green},%F{red})%#%f "
