@@ -121,3 +121,7 @@ export PERL_MM_OPT="INSTALL_BASE=~/perl5"
 #anyenv
 path=(~/.anyenv/bin $path)
 eval "$(anyenv init - zsh)"
+
+#brewで入れたC Libraryのパス
+export LD_LIBRARY_PATH=(`brew --prefix`/lib $LD_LIBRARY_PATH)
+export C_INCLUDE_PATH=(`brew --prefix`/include $C_INCLUDE_PATH)
