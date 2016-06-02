@@ -197,7 +197,7 @@ endfunction
 "----------
 " caw.vim
 "----------
-map ,, <Plug>(caw:i:toggle)
+map ,, <Plug>(caw:hatpos:toggle)
 
 "----------
 " unite.vim
