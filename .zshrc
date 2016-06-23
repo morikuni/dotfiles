@@ -71,13 +71,6 @@ bindkey '^v' edit-command-line
 #emacsライクキーバインド(viだとノーマルモードに入った後で編集できなくなる)
 bindkey -e
 
-#安全に
-alias cp="cp -i"
-alias mv="mv -i"
-if [ -x "`which rmtrash 2>/dev/null`" ]; then
-	alias rm="rmtrash"
-fi
-
 #Ctrl-zでfgを実行
 fancy-ctrl-z () {
   if [[ $#BUFFER -eq 0 ]]; then
@@ -128,3 +121,10 @@ export C_INCLUDE_PATH=(`brew --prefix`/include $C_INCLUDE_PATH)
 
 # z.sh
 . `brew --prefix`/etc/profile.d/z.sh
+
+#安全に
+alias cp="cp -i"
+alias mv="mv -i"
+if [ -x "`which rmtrash 2>/dev/null`" ]; then
+	alias rm="rmtrash"
+fi
