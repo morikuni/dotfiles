@@ -96,6 +96,9 @@ call neobundle#begin(expand('~/.vim/bundle/'))
 	NeoBundle 'kana/vim-textobj-user'
 	NeoBundle 'kana/vim-textobj-indent'
 
+	"ctrlp
+	NeoBundle 'ctrlpvim/ctrlp.vim'
+
 call neobundle#end()
 
 filetype plugin indent on
