@@ -115,8 +115,6 @@ let g:vimfiler_file_icon = '-'
 let g:vimfiler_marked_file_icon = '*'
 let g:vimfiler_safe_mode_by_default = 0
 nnoremap <C-e> :VimFiler -toggle<CR>
-autocmd FileType vimfiler nmap <buffer> <Right>  <Plug>(vimfiler_smart_l)
-autocmd FileType vimfiler nmap <buffer> <Left> <Plug>(vimfiler_smart_h)
 
 "----------
 " molokai
@@ -343,3 +341,11 @@ augroup FileTypeSettingNeco
 	autocmd!
 	autocmd FileType haskell setlocal omnifunc=necoghc#omnifunc
 augroup END
+
+"----------
+" ctrlp
+"----------
+if executable('ag')
+  let g:ctrlp_use_caching = 0
+  let g:ctrlp_user_command = 'ag %s -i --nocolor --nogroup -g ""'
+endif
