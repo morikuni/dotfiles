@@ -96,8 +96,9 @@ call neobundle#begin(expand('~/.vim/bundle/'))
 	NeoBundle 'kana/vim-textobj-user'
 	NeoBundle 'kana/vim-textobj-indent'
 
-	"ctrlp
-	NeoBundle 'ctrlpvim/ctrlp.vim'
+	"fzf
+	NeoBundle 'junegunn/fzf'
+	NeoBundle 'junegunn/fzf.vim'
 
 call neobundle#end()
 
@@ -206,7 +207,6 @@ map ,, <Plug>(caw:hatpos:toggle)
 let g:unite_enable_start_insert=1
 nnoremap <silent> ,b :<C-u>Unite buffer<CR>
 nnoremap <silent> ,s :<C-u>Unite grep:% -no-quit<CR>
-nnoremap <silent> ,r :<C-u>Unite file_mru<CR>
 nnoremap <silent> ,g :<C-u>Unite grep:. -no-quit<CR>
 nnoremap <silent> ,f :<C-u>Unite find<CR>
 
@@ -349,3 +349,11 @@ if executable('ag')
   let g:ctrlp_use_caching = 0
   let g:ctrlp_user_command = 'ag %s -i --nocolor --nogroup -g ""'
 endif
+
+"----------
+" fzf
+"----------
+nnoremap <C-p> :FZF<CR>
+let g:fzf_history_dir = '~/.vim/fzf-history'
+nnoremap ,r :Buffers<CR>
+
