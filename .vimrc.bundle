@@ -357,3 +357,8 @@ nnoremap <C-p> :FZF<CR>
 let g:fzf_history_dir = '~/.vim/fzf-history'
 nnoremap ,r :Buffers<CR>
 
+"----------
+" vim-gitgutter
+"----------
+nnoremap gn :GitGutterNextHunk<CR>
+nnoremap gp :GitGutterPrevHunk<CR>
