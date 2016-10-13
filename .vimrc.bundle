@@ -326,6 +326,7 @@ endif
 let g:neocomplete#sources#dictionary#dictionaries.scala = '~/.vim/dict/scala.dict'
 inoremap <expr><C-h> neocomplete#smart_close_popup()."\<C-h>"
 inoremap <expr><BS> neocomplete#smart_close_popup()."\<C-h>"
+inoremap <expr><CR>  pumvisible() ? "<C-y>" : "<CR>"
 
 "----------
 " eighties
