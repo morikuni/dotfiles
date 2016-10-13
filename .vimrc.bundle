@@ -100,6 +100,13 @@ call neobundle#begin(expand('~/.vim/bundle/'))
 	NeoBundle 'junegunn/fzf'
 	NeoBundle 'junegunn/fzf.vim'
 
+	NeoBundle 'mrk21/yaml-vim'
+
+	NeoBundle 'tpope/vim-fugitive'
+
+	" nginxのsyntax highlight
+	NeoBundle 'vim-scripts/nginx.vim'
+
 call neobundle#end()
 
 filetype plugin indent on
