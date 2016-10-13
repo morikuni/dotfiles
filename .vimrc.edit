@@ -6,7 +6,7 @@ set backspace=indent,eol,start
 set whichwrap=b,s,<,>,[,]
 
 "Tabをスペースに変換しない
-set noexpandtab
+set expandtab
 "改行後に現在のインデントを引き継ぐ
 set autoindent
 "より賢いインデント
