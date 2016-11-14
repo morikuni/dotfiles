@@ -25,9 +25,6 @@ call neobundle#begin(expand('~/.vim/bundle/'))
 	"unite.vim
 	NeoBundle 'Shougo/unite.vim'
 
-	"最近開いたファイルをuniteで表示
-	NeoBundle 'Shougo/neomru.vim'
-
 	"vimproc.vim
 	NeoBundle 'Shougo/vimproc.vim', {
 	\ 'build' : {
@@ -45,17 +42,8 @@ call neobundle#begin(expand('~/.vim/bundle/'))
 	"undo履歴をツリー表示
 	NeoBundle 'sjl/gundo.vim'
 
-	"Markdownのリアルタイムプレビュー
-	NeoBundle 'kannokanno/previm'
-
-	"ヤンク履歴をさかのぼってペースト
-	NeoBundle 'LeafCage/yankround.vim'
-
 	"trailを赤色表示
 	NeoBundle 'bronson/vim-trailing-whitespace'
-
-	"tagを一覧表示
-	NeoBundle 'majutsushi/tagbar'
 
 	"インクリメンタル検索を便利に
 	NeoBundle 'haya14busa/incsearch.vim'
@@ -67,10 +55,6 @@ call neobundle#begin(expand('~/.vim/bundle/'))
 	"補完
 	NeoBundle 'Shougo/neocomplete.vim'
 
-	"テキストオブジェクト強化
-	NeoBundle 'tpope/vim-surround'
-	NeoBundle 'tpope/vim-repeat'
-
 	"検索時に総数と現在位置を表示
 	NeoBundle 'osyo-manga/vim-anzu'
 
@@ -80,28 +64,17 @@ call neobundle#begin(expand('~/.vim/bundle/'))
 	"インデント可視化
 	NeoBundle 'Yggdroot/indentLine'
 
-	"Rust
-	NeoBundle 'rust-lang/rust.vim'
-
 	"Go
 	NeoBundle 'fatih/vim-go'
-
-	"Haskell(Syntax + Indent)
-	NeoBundle 'neovimhaskell/haskell-vim'
-
-	"Haskell(Completion)
-	NeoBundle 'eagletmt/neco-ghc'
-
-	"テキストオブジェクト拡張
-	NeoBundle 'kana/vim-textobj-user'
-	NeoBundle 'kana/vim-textobj-indent'
 
 	"fzf
 	NeoBundle 'junegunn/fzf'
 	NeoBundle 'junegunn/fzf.vim'
 
+    "yaml
 	NeoBundle 'mrk21/yaml-vim'
 
+    "git blameとか
 	NeoBundle 'tpope/vim-fugitive'
 
 	" nginxのsyntax highlight
@@ -209,76 +182,15 @@ endfunction
 map ,, <Plug>(caw:hatpos:toggle)
 
 "----------
-" unite.vim
-"----------
-let g:unite_enable_start_insert=1
-nnoremap <silent> ,b :<C-u>Unite buffer<CR>
-nnoremap <silent> ,s :<C-u>Unite grep:% -no-quit<CR>
-nnoremap <silent> ,g :<C-u>Unite grep:. -no-quit<CR>
-nnoremap <silent> ,f :<C-u>Unite find<CR>
-
-"Uniteのgrepにagを使う
-if executable('ag')
-  let g:unite_source_grep_command = 'ag'
-  let g:unite_source_grep_default_opts = '--nogroup --nocolor --column'
-  let g:unite_source_grep_recursive_opt = ''
-endif
-
-call unite#filters#matcher_default#use(['matcher_fuzzy'])
-call unite#filters#sorter_default#use(['sorter_rank'])
-
-"----------
 " Gundo
 "----------
 nnoremap <F5> :GundoToggle<CR>
 let g:gundo_close_on_revert=1
 
 "----------
-" previm
-"----------
-if has('mac')
-	let g:previm_open_cmd = 'open -a Safari'
-endif
-
-"----------
-" yankround
-"----------
-nmap p <Plug>(yankround-p)
-nmap P <Plug>(yankround-P)
-nmap <C-p> <Plug>(yankround-prev)
-nmap <C-n> <Plug>(yankround-next)
-
-"----------
-" vim-trailing-whitespace
-"----------
-let g:extra_whitespace_ignored_filetypes = ['unite']
-
-"----------
 " supertab
 "----------
 let g:SuperTabDefaultCompletionType = '<c-n>'
-
-"----------
-" tagbar
-"----------
-nnoremap <F8> :TagbarToggle<CR>
-let g:tagbar_type_scala = {
-	\ 'ctagstype' : 'scala',
-	\ 'sro'       : '.',
-	\ 'kinds'     : [
-		\ 'p:packages',
-		\ 'T:types:1',
-		\ 't:traits',
-		\ 'o:objects',
-		\ 'O:case objects',
-		\ 'c:classes',
-		\ 'C:case classes',
-		\ 'm:methods',
-		\ 'V:values:1',
-		\ 'v:variables:1'
-	\ ]
-\ }
-
 
 "----------
 " EasyMotion
@@ -350,23 +262,6 @@ let g:go_highlight_methods = 1
 let g:go_highlight_structs = 1
 let g:go_highlight_operators = 1
 let g:go_highlight_build_constraints = 1
-
-"----------
-" neco-ghc
-"----------
-let g:haskellmode_completion_ghc = 0
-augroup FileTypeSettingNeco
-	autocmd!
-	autocmd FileType haskell setlocal omnifunc=necoghc#omnifunc
-augroup END
-
-"----------
-" ctrlp
-"----------
-if executable('ag')
-  let g:ctrlp_use_caching = 0
-  let g:ctrlp_user_command = 'ag %s -i --nocolor --nogroup -g ""'
-endif
 
 "----------
 " fzf
