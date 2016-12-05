@@ -47,7 +47,6 @@ call neobundle#begin(expand('~/.vim/bundle/'))
 
 	"インクリメンタル検索を便利に
 	NeoBundle 'haya14busa/incsearch.vim'
-	NeoBundle 'haya14busa/incsearch-easymotion.vim'
 
 	"Gitの編集差分を表示
 	NeoBundle 'airblade/vim-gitgutter'
@@ -193,36 +192,13 @@ let g:gundo_close_on_revert=1
 let g:SuperTabDefaultCompletionType = '<c-n>'
 
 "----------
-" EasyMotion
-"----------
-"デフォルトのショートカットを無効化
-let g:EasyMotion_do_mapping = 0
-"スマートケースを使用
-let g:EasyMotion_smartcase = 1
-
-"----------
-" incsearch & (anzu) & easymotion
+" incsearch & (anzu)
 "----------
 map /  <Plug>(incsearch-forward)
-map g/ <Plug>(incsearch-stay)
 let g:incsearch#auto_nohlsearch = 1
 map n  <Plug>(incsearch-nohl-n)<Plug>(anzu-update-search-status-with-echo)
 map N  <Plug>(incsearch-nohl-N)<Plug>(anzu-update-search-status-with-echo)
 map *  <Plug>(incsearch-nohl-*)
-map #  <Plug>(incsearch-nohl-#)
-map g* <Plug>(incsearch-nohl-g*)
-map g# <Plug>(incsearch-nohl-g#)
-
-function! s:incsearch_config(...) abort
-  return incsearch#util#deepextend(deepcopy({
-  \   'modules': [incsearch#config#easymotion#module({'overwin': 1, 'is_stay': 1})],
-  \   'keymap': {
-  \     "\<CR>": '<Over>(easymotion)'
-  \   },
-  \   'is_expr': 0
-  \ }), get(a:, 1, {}))
-endfunction
-nnoremap <silent><expr> s incsearch#go(<SID>incsearch_config())
 
 "----------
 " neocomplete
