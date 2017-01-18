@@ -6,8 +6,10 @@ nnoremap _ :nohlsearch<CR>
 inoremap <C-@> <NOP>
 
 "\で行末移動
-nnoremap \ $
-vnoremap \ $
+nnoremap - ^
+vnoremap - ^
+nnoremap ^ $
+vnoremap ^ $
 
 "インサートモードでemacsっぽく
 inoremap <C-a> <Home>
