@@ -6,7 +6,10 @@ export LANG=ja_JP.UTF-8
 PROMPT="
 [%F{magenta}%*%f] %F{yellow}%n%f at %F{green}%M%f in %F{cyan}%~%f
 %(?,%F{green},%F{red})%#%f "
-SPROMPT="もしかして: %r    [(y)es, (n)o, (a)bort, (e)xit] > "
+
+#コマンド間違えたときのプロンプトを無効化
+unsetopt correct
+unsetopt correct_all
 
 #履歴ファイル
 HISTFILE=~/.zsh_history
@@ -26,9 +29,6 @@ setopt no_beep
 
 #Ctrl+Dで終了しないように
 setopt ignore_eof
-
-#コマンド名の間違いを指摘
-setopt correct
 
 #homebrewの補完
 if [ -e /usr/local/share/zsh-completions ]; then
