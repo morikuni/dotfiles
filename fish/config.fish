@@ -6,6 +6,7 @@ if which rm > /dev/null 2>&1
 end
 
 # ENV
+set -e GOPATH
 set -U GOPATH ~/go
 
 # PATH
