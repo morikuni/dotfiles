@@ -5,6 +5,10 @@ mkdir ~/.vim
 mkdir ~/.vim/bundle
 mkdir ~/.vim/undo
 mkdir ~/.vim/swap
+ln -sf ~/dotfiles/dict ~/.vim/
+
+#NeoBundleをインストール
+git clone https://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
 
 #dotファイルのシンボリックリンクを作成
 dotfiles=(
@@ -24,8 +28,6 @@ do
 	ln -sf ~/dotfiles/$dotfile ~/$dotfile
 done
 
-ln -sf ~/dotfiles/dict ~/.vim/
-
 #.configディレクトリに配置するもの
 configfiles=(
 fish/functions/fish_prompt.fish
@@ -36,5 +38,3 @@ do
 	ln -sf ~/dotfiles/$configfile ~/.config/$configfile
 done
 
-#NeoBundleをインストール
-git clone https://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
