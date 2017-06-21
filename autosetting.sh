@@ -38,3 +38,4 @@ do
 	ln -sf ~/dotfiles/$configfile ~/.config/$configfile
 done
 
+sh ~/dotfiles/install.sh
