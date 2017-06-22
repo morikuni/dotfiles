@@ -30,8 +30,7 @@ done
 
 #.configディレクトリに配置するもの
 configfiles=(
-fish/functions/fish_prompt.fish
-fish/functions/fish_user_key_bindings.fish
+fish/functions/*
 fish/config.fish
 )
 for configfile in ${configfiles[@]}
