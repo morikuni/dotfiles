@@ -7,7 +7,7 @@ end
 
 # ENV
 set -e GOPATH
-set -U GOPATH ~/go
+set -Ux GOPATH ~/go
 
 # PATH
 set -U fish_user_paths /usr/local/bin
