@@ -19,9 +19,6 @@ call neobundle#begin(expand('~/.vim/bundle/'))
 	"Scalaのシンタックスハイライト
 	NeoBundle 'derekwyatt/vim-scala'
 
-	"カーソル移動
-	NeoBundle 'Lokaltog/vim-easymotion'
-
 	"unite.vim
 	NeoBundle 'Shougo/unite.vim'
 
@@ -78,6 +75,12 @@ call neobundle#begin(expand('~/.vim/bundle/'))
 
 	" nginxのsyntax highlight
 	NeoBundle 'vim-scripts/nginx.vim'
+
+	" terraform syntax
+	NeoBundle 'hashivim/vim-terraform'
+
+    " fish syntax
+    NeoBundle 'dag/vim-fish'
 
 call neobundle#end()
 
