@@ -28,6 +28,8 @@ do
 	ln -sf ~/dotfiles/$dotfile ~/$dotfile
 done
 
+mkdir -p ~/.config/fish/functions
+
 #.configディレクトリに配置するもの
 configfiles=(
 fish/functions/*
