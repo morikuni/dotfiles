@@ -82,6 +82,9 @@ call neobundle#begin(expand('~/.vim/bundle/'))
     " fish syntax
     NeoBundle 'dag/vim-fish'
 
+    "カーソル移動
+    NeoBundle 'easymotion/vim-easymotion'
+
 call neobundle#end()
 
 filetype plugin indent on
@@ -257,3 +260,11 @@ nnoremap ,r :Buffers<CR>
 "----------
 nnoremap gn :GitGutterNextHunk<CR>
 nnoremap gp :GitGutterPrevHunk<CR>
+
+"----------
+" easymotion
+"----------
+let g:EasyMotion_do_mapping = 0 " Disable default mappings
+nmap s <Plug>(easymotion-sn)
+let g:EasyMotion_smartcase = 1
+let g:EasyMotion_add_search_history = 0
