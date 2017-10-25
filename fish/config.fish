@@ -6,9 +6,10 @@ if which rm > /dev/null 2>&1
 end
 
 # ENV
-set -e GOPATH
-set -Ux GOPATH ~/go
+set -gx GOPATH ~/go
+set -gx EDITOR vim
 
 # PATH
-set -U fish_user_paths /usr/local/bin
-set -U fish_user_paths $GOPATH/bin $fish_user_paths
+set -gx fish_user_paths /usr/local/bin
+set -gx fish_user_paths $GOPATH/bin $fish_user_paths
+set -gx fish_user_paths ~/bin/google-cloud-sdk/bin/ $fish_user_paths
