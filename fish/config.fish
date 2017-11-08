@@ -8,6 +8,7 @@ end
 # ENV
 set -gx GOPATH ~/go
 set -gx EDITOR vim
+set -gx FZF_DEFAULT_COMMAND 'ag --hidden --ignore .git -g ""'
 
 # PATH
 set -gx fish_user_paths /usr/local/bin
