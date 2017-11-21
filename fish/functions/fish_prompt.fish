@@ -9,7 +9,7 @@ function fish_prompt
     end
 
     set_color magenta
-    printf '[%s] ' (date +"%Y/%m/%d %H:%m:%S")
+    printf '[%s] ' (date +"%Y/%m/%d %H:%M:%S")
 
     set_color yellow
     printf '%s' (pwd)
