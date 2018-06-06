@@ -19,6 +19,7 @@ dotfiles=(
 .vimrc.bundle
 .vimrc.shortcut
 .vimrc.filetype
+.ideavimrc
 .tmux.conf
 .zshrc
 .ctags
