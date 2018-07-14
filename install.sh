@@ -4,6 +4,7 @@ if [ "$(uname)" == "Darwin" ]; then
     brew install rmtrash
     brew install tmux
     brew install fzf
+    brew install mas
 
     brew cask install bettertouchtool
     brew cask install alfred
