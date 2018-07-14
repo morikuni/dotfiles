@@ -49,13 +49,13 @@ call neobundle#begin(expand('~/.vim/bundle/'))
 	NeoBundle 'airblade/vim-gitgutter'
 
 	"補完
-	NeoBundle 'Shougo/neocomplete.vim'
+	" NeoBundle 'Shougo/neocomplete.vim'
 
 	"検索時に総数と現在位置を表示
 	NeoBundle 'osyo-manga/vim-anzu'
 
 	"ウインドウを移動したときにサイズを自動調整
-	NeoBundle 'justincampbell/vim-eighties'
+	" NeoBundle 'justincampbell/vim-eighties'
 
 	"インデント可視化
 	NeoBundle 'Yggdroot/indentLine'
@@ -84,6 +84,9 @@ call neobundle#begin(expand('~/.vim/bundle/'))
 
     "カーソル移動
     NeoBundle 'easymotion/vim-easymotion'
+
+    " splidity
+    NeoBundle 'tomlion/vim-solidity'
 
 call neobundle#end()
 
@@ -208,28 +211,28 @@ map n  <Plug>(incsearch-nohl-n)<Plug>(anzu-update-search-status-with-echo)
 map N  <Plug>(incsearch-nohl-N)<Plug>(anzu-update-search-status-with-echo)
 map *  <Plug>(incsearch-nohl-*)
 
-"----------
-" neocomplete
-"----------
-let g:neocomplete#enable_at_startup = 1
-let g:neocomplete#enable_smart_case = 1
-let g:neocomplete#auto_completion_start_length = 1
-let g:neocomplete#max_keyword_width = 150
-if !exists('g:neocomplete#sources')
-	let g:neocomplete#sources = {}
-endif
-let g:neocomplete#sources._ = ['buffer', 'member', 'dictionary', 'file', 'omni']
-if !exists('g:neocomplete#sources#omni#input_patterns')
-	let g:neocomplete#sources#omni#input_patterns = {}
-endif
-let g:neocomplete#sources#omni#input_patterns.haskell = '\%(\u\w*\.\)\+[[:alnum:]_'']*\|[[:alpha:]_''][[:alnum:]_'']*'
-if !exists('g:neocomplete#sources#dictionary#dictionaries')
-	let g:neocomplete#sources#dictionary#dictionaries = {}
-endif
-let g:neocomplete#sources#dictionary#dictionaries.scala = '~/.vim/dict/scala.dict'
-inoremap <expr><C-h> neocomplete#smart_close_popup()."\<C-h>"
-inoremap <expr><BS> neocomplete#smart_close_popup()."\<C-h>"
-inoremap <expr><CR>  pumvisible() ? "<C-y>" : "<CR>"
+" "----------
+" " neocomplete
+" "----------
+" let g:neocomplete#enable_at_startup = 1
+" let g:neocomplete#enable_smart_case = 1
+" let g:neocomplete#auto_completion_start_length = 1
+" let g:neocomplete#max_keyword_width = 150
+" if !exists('g:neocomplete#sources')
+" 	let g:neocomplete#sources = {}
+" endif
+" let g:neocomplete#sources._ = ['buffer', 'member', 'dictionary', 'file', 'omni']
+" if !exists('g:neocomplete#sources#omni#input_patterns')
+" 	let g:neocomplete#sources#omni#input_patterns = {}
+" endif
+" let g:neocomplete#sources#omni#input_patterns.haskell = '\%(\u\w*\.\)\+[[:alnum:]_'']*\|[[:alpha:]_''][[:alnum:]_'']*'
+" if !exists('g:neocomplete#sources#dictionary#dictionaries')
+" 	let g:neocomplete#sources#dictionary#dictionaries = {}
+" endif
+" let g:neocomplete#sources#dictionary#dictionaries.scala = '~/.vim/dict/scala.dict'
+" inoremap <expr><C-h> neocomplete#smart_close_popup()."\<C-h>"
+" inoremap <expr><BS> neocomplete#smart_close_popup()."\<C-h>"
+" inoremap <expr><CR>  pumvisible() ? "<C-y>" : "<CR>"
 
 "----------
 " eighties
