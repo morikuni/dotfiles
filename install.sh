@@ -10,7 +10,7 @@ if [ "$(uname)" == "Darwin" ]; then
     brew cask install deckset
     brew cask install font-fira-code
     brew cask install dropbox
-    brew cask install jetbrains-toolbox
+    brew cask install homebrew/cask-fonts/jetbrains-toolbox
     brew cask install kindle
     brew cask install slack
     brew cask install sequel-pro
