@@ -17,6 +17,7 @@ if [ "$(uname)" == "Darwin" ]; then
     brew cask install sequel-pro
     brew cask install atok
     brew cask install fork
+    brew cask install iterm2
 
 	# Translate Tab
 	mas install 458887729
