@@ -16,6 +16,7 @@ if [ "$(uname)" == "Darwin" ]; then
     brew cask install slack
     brew cask install sequel-pro
     brew cask install atok
+    brew cask install fork
 
 	# Translate Tab
 	mas install 458887729
@@ -37,6 +38,8 @@ if [ "$(uname)" == "Darwin" ]; then
 	mas install 457622435
 	# PopClip
 	mas install 445189367
+    # Spark
+    mas install 1176895641
 fi
 
 
