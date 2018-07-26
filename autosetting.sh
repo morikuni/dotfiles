@@ -31,6 +31,8 @@ do
 done
 
 mkdir -p ~/.config/fish/functions
+# fisherman
+curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs git.io/fisherman
 
 #.configディレクトリに配置するもの
 configfiles=(
