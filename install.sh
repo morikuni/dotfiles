@@ -10,6 +10,7 @@ if [ "$(uname)" == "Darwin" ]; then
     brew install vim --with-lua
     brew install ag
     brew install z
+    brew install jq
 
     brew cask install bettertouchtool
     brew cask install alfred
@@ -26,6 +27,7 @@ if [ "$(uname)" == "Darwin" ]; then
     brew cask install dash
     brew cask install ksdiff
     brew cask install google-cloud-sdk
+    brew cask install docker
 
 	# Translate Tab
 	mas install 458887729
