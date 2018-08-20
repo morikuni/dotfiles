@@ -15,4 +15,4 @@
   cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
   trustExitCode = true
 [core]
-	excludesfile = /Users/morikuni/.gitignore_global
+    excludesfile = ~/.gitignore_global
