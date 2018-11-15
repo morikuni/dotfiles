@@ -15,9 +15,9 @@ if [ "$(uname)" == "Darwin" ]; then
     brew cask install bettertouchtool
     brew cask install alfred
     brew cask install deckset
-    brew cask install font-fira-code
+    brew cask install jetbrains-toolbox
     brew cask install dropbox
-    brew cask install homebrew/cask-fonts/jetbrains-toolbox
+    brew cask install font-fira-code
     brew cask install kindle
     brew cask install slack
     brew cask install sequel-pro
@@ -28,6 +28,7 @@ if [ "$(uname)" == "Darwin" ]; then
     brew cask install ksdiff
     brew cask install google-cloud-sdk
     brew cask install docker
+    brew cask install paw
 
 	# Translate Tab
 	mas install 458887729
