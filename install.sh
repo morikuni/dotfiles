@@ -11,6 +11,7 @@ if [ "$(uname)" == "Darwin" ]; then
     brew install ag
     brew install z
     brew install jq
+    brew install direnv
 
     brew cask install bettertouchtool
     brew cask install alfred

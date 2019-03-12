@@ -17,3 +17,6 @@ set -gx fish_user_paths $GOPATH/bin $fish_user_paths
 
 # gcloud
 source /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.fish.inc
+
+# direnv
+eval (direnv hook fish)
