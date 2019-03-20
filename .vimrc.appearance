@@ -4,6 +4,9 @@ syntax enable
 "256色使う
 set t_Co=256
 
+"TrueColorを使う
+set termguicolors
+
 "カーソルの行を強調表示
 set cursorline
 highlight CursorLine term=reverse cterm=none ctermbg=234
