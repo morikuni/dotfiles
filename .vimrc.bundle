@@ -8,7 +8,7 @@ call neobundle#begin(expand('~/.vim/bundle/'))
 	NeoBundle 'Shougo/vimfiler'
 
 	"カラースキーマ
-	NeoBundle 'crusoexia/vim-monokai'
+	NeoBundle 'tomasr/molokai'
 
 	"ステータスバーの拡張
 	NeoBundle 'itchyny/lightline.vim'
@@ -107,9 +107,9 @@ nnoremap <C-e> :VimFiler -toggle<CR>
 nnoremap <space><C-e> :VimFilerBufferDir<CR>
 
 "----------
-" monokai
+" molokai
 "----------
-colorscheme monokai
+colorscheme molokai
 
 "----------
 " lightline
