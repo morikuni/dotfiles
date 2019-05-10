@@ -12,7 +12,23 @@ function fish_prompt
     printf '[%s] ' (date +"%Y/%m/%d %H:%M:%S")
 
     set_color yellow
-    printf '%s' (pwd)
+    printf '%s ' (pwd)
+    set_color normal
+
+    set branch (git symbolic-ref --short HEAD 2> /dev/null)
+    if test -n "$branch"
+        set_color cyan
+        printf '<%s> ' $branch
+        set_color normal
+    end
+
+    kubectl config get-contexts \
+    | grep '*' \
+    | read current name cluster authinfo namespace
+    set name (echo -n "$name" | tr -d ' ')
+    set namespace (echo -n "$namespace" | tr -d ' ')
+    set_color green
+    printf '%s.%s' $name $namespace
     set_color normal
 
     echo
