@@ -43,3 +43,12 @@ foreach($dir in $dirs) {
 }
 
 git clone https://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
+
+$wsl_home = $(wsl wslpath -w ~)
+
+# To share ssh-settings
+if (!(Test-Path ($wsl_home+'/.ssh'))) {
+    mkdir ($wsl_home+'/.ssh')
+}
+cp '~/.ssh/id_rsa' ($wsl_home+'/.ssh/id_rsa')
+cp '~/.ssh/id_rsa.pub' ($wsl_home+'/.ssh/id_rsa.pub')
