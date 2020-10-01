@@ -5,7 +5,6 @@ mkdir ~/.vim
 mkdir ~/.vim/bundle
 mkdir ~/.vim/undo
 mkdir ~/.vim/swap
-ln -sf ~/dotfiles/dict ~/.vim/
 
 #NeoBundleをインストール
 git clone https://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
