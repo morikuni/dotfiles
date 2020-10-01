@@ -6,7 +6,7 @@ brew install fzf
 brew install mas
 brew install git
 brew install go
-brew install vim --with-lua
+brew install vim
 brew install ag
 brew install z
 brew install jq
