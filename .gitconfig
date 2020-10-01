@@ -16,3 +16,6 @@
 	trustExitCode = true
 [core]
 	excludesfile = ~/.gitignore_global
+	sshCommand = C:/Windows/System32/OpenSSH/ssh.exe
+[include]
+	path = .gitconfig.os
