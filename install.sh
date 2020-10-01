@@ -11,6 +11,7 @@ brew install ag
 brew install z
 brew install jq
 brew install direnv
+brew install kubectl
 
 if [ "$(uname)" == "Darwin" ]; then
   brew cask install bettertouchtool
