@@ -19,6 +19,7 @@ dotfiles=(
 .vimrc.shortcut
 .vimrc.filetype
 .gitconfig
+.gitignore
 .ideavimrc
 .tmux.conf
 .zshrc
