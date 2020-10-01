@@ -1,7 +1,7 @@
 # 安全に
 alias cp "cp -i"
 alias mv "mv -i"
-if which rm > /dev/null 2>&1
+if which rmtrash > /dev/null 2>&1
 	alias rm "rmtrash"
 end
 
