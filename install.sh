@@ -12,6 +12,8 @@ brew install z
 brew install jq
 brew install direnv
 brew install kubectl
+brew install make
+brew install yarn
 
 if [ "$(uname)" == "Darwin" ]; then
   brew cask install bettertouchtool
