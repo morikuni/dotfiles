@@ -1,35 +1,35 @@
-if [ "$(uname)" == "Darwin" ]; then
-    brew install reattach-to-user-namespace
-    brew install fish
-    brew install rmtrash
-    brew install tmux
-    brew install fzf
-    brew install mas
-    brew install git
-    brew install go
-    brew install vim --with-lua
-    brew install ag
-    brew install z
-    brew install jq
-    brew install direnv
+brew install reattach-to-user-namespace
+brew install fish
+brew install rmtrash
+brew install tmux
+brew install fzf
+brew install mas
+brew install git
+brew install go
+brew install vim --with-lua
+brew install ag
+brew install z
+brew install jq
+brew install direnv
 
-    brew cask install bettertouchtool
-    brew cask install alfred
-    brew cask install deckset
-    brew cask install jetbrains-toolbox
-    brew cask install dropbox
-    brew cask install font-fira-code
-    brew cask install kindle
-    brew cask install slack
-    brew cask install sequel-pro
-    brew cask install atok
-    brew cask install fork
-    brew cask install iterm2
-    brew cask install dash
-    brew cask install ksdiff
-    brew cask install google-cloud-sdk
-    brew cask install docker
-    brew cask install paw
+if [ "$(uname)" == "Darwin" ]; then
+  brew cask install bettertouchtool
+  brew cask install alfred
+  brew cask install deckset
+  brew cask install jetbrains-toolbox
+  brew cask install dropbox
+  brew cask install font-fira-code
+  brew cask install kindle
+  brew cask install slack
+  brew cask install sequel-pro
+  brew cask install atok
+  brew cask install fork
+  brew cask install iterm2
+  brew cask install dash
+  brew cask install ksdiff
+  brew cask install google-cloud-sdk
+  brew cask install docker
+  brew cask install paw
 
 	# Translate Tab
 	mas install 458887729
@@ -51,8 +51,8 @@ if [ "$(uname)" == "Darwin" ]; then
 	mas install 457622435
 	# PopClip
 	mas install 445189367
-    # Spark
-    mas install 1176895641
+  # Spark
+  mas install 1176895641
 fi
 
 
