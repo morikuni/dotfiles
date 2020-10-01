@@ -20,7 +20,10 @@ case Linux
 end
 
 # gcloud
-source /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.fish.inc
+switch (uname)
+case Darwin
+	source /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.fish.inc
+end
 
 # direnv
 eval (direnv hook fish)
