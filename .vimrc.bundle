@@ -16,28 +16,11 @@ call neobundle#begin(expand('~/.vim/bundle/'))
 	"複数行コメントアウト
 	NeoBundle 'tyru/caw.vim'
 
-	"Scalaのシンタックスハイライト
-	NeoBundle 'derekwyatt/vim-scala'
-
 	"unite.vim
 	NeoBundle 'Shougo/unite.vim'
 
-	"vimproc.vim
-	NeoBundle 'Shougo/vimproc.vim', {
-	\ 'build' : {
-	\	  'windows' : 'tools\\update-dll-mingw',
-	\	  'cygwin' : 'make -f make_cygwin.mak',
-	\	  'mac' : 'make -f make_mac.mak',
-	\	  'linux' : 'make',
-	\	  'unix' : 'gmake',
-	\	 },
-	\ }
-
 	"Tabで補完
 	NeoBundle 'ervandew/supertab'
-
-	"undo履歴をツリー表示
-	NeoBundle 'sjl/gundo.vim'
 
 	"trailを赤色表示
 	NeoBundle 'bronson/vim-trailing-whitespace'
@@ -48,14 +31,8 @@ call neobundle#begin(expand('~/.vim/bundle/'))
 	"Gitの編集差分を表示
 	NeoBundle 'airblade/vim-gitgutter'
 
-	"補完
-	" NeoBundle 'Shougo/neocomplete.vim'
-
 	"検索時に総数と現在位置を表示
 	NeoBundle 'osyo-manga/vim-anzu'
-
-	"ウインドウを移動したときにサイズを自動調整
-	" NeoBundle 'justincampbell/vim-eighties'
 
 	"インデント可視化
 	NeoBundle 'Yggdroot/indentLine'
@@ -70,20 +47,11 @@ call neobundle#begin(expand('~/.vim/bundle/'))
     "yaml
 	NeoBundle 'mrk21/yaml-vim'
 
-    "git blameとか
-	NeoBundle 'tpope/vim-fugitive'
-
-	" nginxのsyntax highlight
-	NeoBundle 'vim-scripts/nginx.vim'
-
 	" terraform syntax
 	NeoBundle 'hashivim/vim-terraform'
 
     " fish syntax
     NeoBundle 'dag/vim-fish'
-
-    "カーソル移動
-    NeoBundle 'easymotion/vim-easymotion'
 
     " splidity
     NeoBundle 'tomlion/vim-solidity'
@@ -191,12 +159,6 @@ endfunction
 map ,, <Plug>(caw:hatpos:toggle)
 
 "----------
-" Gundo
-"----------
-nnoremap <F5> :GundoToggle<CR>
-let g:gundo_close_on_revert=1
-
-"----------
 " supertab
 "----------
 let g:SuperTabDefaultCompletionType = 'context'
@@ -211,28 +173,6 @@ map n  <Plug>(incsearch-nohl-n)<Plug>(anzu-update-search-status-with-echo)
 map N  <Plug>(incsearch-nohl-N)<Plug>(anzu-update-search-status-with-echo)
 map *  <Plug>(incsearch-nohl-*)
 
-" "----------
-" " neocomplete
-" "----------
-" let g:neocomplete#enable_at_startup = 1
-" let g:neocomplete#enable_smart_case = 1
-" let g:neocomplete#auto_completion_start_length = 1
-" let g:neocomplete#max_keyword_width = 150
-" if !exists('g:neocomplete#sources')
-" 	let g:neocomplete#sources = {}
-" endif
-" let g:neocomplete#sources._ = ['buffer', 'member', 'dictionary', 'file', 'omni']
-" if !exists('g:neocomplete#sources#omni#input_patterns')
-" 	let g:neocomplete#sources#omni#input_patterns = {}
-" endif
-" let g:neocomplete#sources#omni#input_patterns.haskell = '\%(\u\w*\.\)\+[[:alnum:]_'']*\|[[:alpha:]_''][[:alnum:]_'']*'
-" if !exists('g:neocomplete#sources#dictionary#dictionaries')
-" 	let g:neocomplete#sources#dictionary#dictionaries = {}
-" endif
-" let g:neocomplete#sources#dictionary#dictionaries.scala = '~/.vim/dict/scala.dict'
-" inoremap <expr><C-h> neocomplete#smart_close_popup()."\<C-h>"
-" inoremap <expr><BS> neocomplete#smart_close_popup()."\<C-h>"
-" inoremap <expr><CR>  pumvisible() ? "<C-y>" : "<CR>"
 
 "----------
 " eighties
@@ -263,11 +203,3 @@ nnoremap ,r :Buffers<CR>
 "----------
 nnoremap gn :GitGutterNextHunk<CR>
 nnoremap gp :GitGutterPrevHunk<CR>
-
-"----------
-" easymotion
-"----------
-let g:EasyMotion_do_mapping = 0 " Disable default mappings
-nmap s <Plug>(easymotion-sn)
-let g:EasyMotion_smartcase = 1
-let g:EasyMotion_add_search_history = 0
