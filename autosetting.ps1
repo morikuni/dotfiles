@@ -18,14 +18,19 @@ foreach($item in $link_items) {
 }
 
 $link_items_os = @(
-'.gitconfig'
+'.gitconfig',
+'.tmuc.conf'
 )
 
 foreach($item in $link_items_os) {
     $from = './' + $item + '.windows'
     $to   = '~/' + $item + '.os'
     if (!(Test-Path $to)) {
-        New-Item -Type SymbolicLink $to -Value $from
+        if (Test-Path $from) {
+            New-Item -Type SymbolicLink $to -Value $from
+        } else {
+            New-Item -Type File $to
+        }
     }
 }
 
