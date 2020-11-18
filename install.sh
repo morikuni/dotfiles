@@ -1,37 +1,41 @@
-brew install reattach-to-user-namespace
-brew install fish
-brew install rmtrash
-brew install tmux
-brew install fzf
-brew install mas
-brew install git
-brew install go
-brew install vim
-brew install ag
-brew install z
-brew install jq
-brew install direnv
-brew install kubectl
-brew install make
-brew install yarn
+brew install \
+    reattach-to-user-namespace \
+    fish \
+    rmtrash \
+    tmux \
+    fzf \
+    mas \
+    git \
+    go \
+    vim \
+    ag \
+    z \
+    jq \
+    direnv \
+    kubectl \
+    make \
+    yarn
 
 if [ "$(uname)" == "Darwin" ]; then
-    brew cask install bettertouchtool
-    brew cask install alfred
-    brew cask install jetbrains-toolbox
-    brew cask install dropbox
-    brew cask install font-fira-code
-    brew cask install kindle
-    brew cask install slack
-    brew cask install sequel-pro
-    brew cask install atok
-    brew cask install fork
-    brew cask install iterm2
-    brew cask install dash
-    brew cask install ksdiff
-    brew cask install google-cloud-sdk
-    brew cask install docker
-    brew cask install paw
+    brew cask install \
+        bettertouchtool \
+        alfred \
+        jetbrains-toolbox \
+        dropbox \
+        homebrew/cask-fonts/font-fira-code \
+        kindle \
+        slack \
+        sequel-pro \
+        atok \
+        fork \
+        iterm2 \
+        dash \
+        ksdiff \
+        google-cloud-sdk \
+        docker \
+        paw \
+        jasper \
+        discord
 
     # Translate Tab
     mas install 458887729
