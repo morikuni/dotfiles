@@ -38,7 +38,14 @@ call neobundle#begin(expand('~/.vim/bundle/'))
 	NeoBundle 'Yggdroot/indentLine'
 
 	"Go
-	NeoBundle 'fatih/vim-go'
+    NeoBundle 'mattn/vim-goimports'
+
+    "LSP
+    NeoBundle 'prabirshrestha/async.vim'
+    NeoBundle 'prabirshrestha/asyncomplete.vim'
+    NeoBundle 'prabirshrestha/asyncomplete-lsp.vim'
+    NeoBundle 'prabirshrestha/vim-lsp'
+    NeoBundle 'mattn/vim-lsp-settings'
 
 	"fzf
 	NeoBundle 'junegunn/fzf'
