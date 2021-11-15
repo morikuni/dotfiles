@@ -17,7 +17,7 @@ brew install \
     yarn
 
 if [ "$(uname)" == "Darwin" ]; then
-    brew cask install \
+    brew install --cask \
         bettertouchtool \
         alfred \
         jetbrains-toolbox \
