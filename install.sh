@@ -14,7 +14,8 @@ brew install \
     direnv \
     kubectl \
     make \
-    yarn
+    yarn \
+    kitty
 
 if [ "$(uname)" == "Darwin" ]; then
     brew install --cask \

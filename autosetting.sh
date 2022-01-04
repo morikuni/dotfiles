@@ -38,6 +38,7 @@ curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs git.io/fisherman
 configfiles=(
 fish/functions/*
 fish/config.fish
+kitty/kitty.conf
 )
 for configfile in ${configfiles[@]}
 do
