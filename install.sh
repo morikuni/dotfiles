@@ -36,7 +36,10 @@ if [ "$(uname)" == "Darwin" ]; then
         docker \
         paw \
         jasper \
-        discord
+        discord \
+        stats \
+        krisp \
+        homebrew/cask-drivers/elgato-stream-deck
 
     # Translate Tab
     mas install 458887729
