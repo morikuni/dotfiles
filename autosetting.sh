@@ -45,4 +45,6 @@ do
 	ln -sf ~/dotfiles/$configfile ~/.config/$configfile
 done
 
+ln -sf ~/Library/Mobile\ Documents/com\~apple\~CloudDocs/ ~/iCloud
+
 sh ~/dotfiles/install.sh
