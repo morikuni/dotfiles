@@ -1,5 +1,4 @@
 brew install \
-    reattach-to-user-namespace \
     fish \
     rmtrash \
     tmux \
@@ -9,13 +8,10 @@ brew install \
     go \
     vim \
     ag \
-    z \
     jq \
     direnv \
-    kubectl \
-    make \
     yarn \
-    kitty
+    make
 
 if [ "$(uname)" == "Darwin" ]; then
     brew install --cask \
@@ -26,12 +22,8 @@ if [ "$(uname)" == "Darwin" ]; then
         homebrew/cask-fonts/font-fira-code \
         kindle \
         slack \
-        sequel-pro \
-        atok \
         fork \
         iterm2 \
-        dash \
-        ksdiff \
         google-cloud-sdk \
         docker \
         paw \
@@ -39,6 +31,7 @@ if [ "$(uname)" == "Darwin" ]; then
         discord \
         stats \
         krisp \
+        android-studio \
         homebrew/cask-drivers/elgato-stream-deck
 
     # Translate Tab
@@ -62,5 +55,4 @@ if [ "$(uname)" == "Darwin" ]; then
     # Spark
     mas install 1176895641
 fi
-
 
