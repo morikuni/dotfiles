@@ -30,13 +30,13 @@ do
 done
 
 mkdir -p ~/.config/fish/functions
-# fisherman
-curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs git.io/fisherman
+mkdir -p ~/.config/alacritty
 
 #.configディレクトリに配置するもの
 configfiles=(
 fish/functions/*
 fish/config.fish
+alacritty/alacritty.yml
 )
 for configfile in ${configfiles[@]}
 do

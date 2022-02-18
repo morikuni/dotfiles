@@ -32,6 +32,7 @@ if [ "$(uname)" == "Darwin" ]; then
         stats \
         krisp \
         android-studio \
+        alacritty \
         homebrew/cask-drivers/elgato-stream-deck
 
     # Translate Tab
