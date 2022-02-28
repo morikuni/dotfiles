@@ -1,7 +1,7 @@
 window:
   dimensions:
-    columns: 120
-    lines: 40
+    columns: 250
+    lines: 80
 
   padding:
     x: 8
@@ -25,8 +25,9 @@ font:
 key_bindings:
   - { key: LBracket, mods: Control, chars: "\x1b" } # ctrl+[ をエスケープにする
   - { key: Q, mods: Control, chars: "\x11" } # tmuxのmodをctrl+qにしていて、これがないと反応しなくなる。
-  - { key: Yen,                                         chars: "\x5C"          }
-  - { key: Yen,        mods: Alt,                       chars: "\xA5"          }
+  - { key: Backslash, mods: Alt, chars: "\x5c" } # これがないとバックスラッシュが入力できなくなった
+  - { key: Semicolon, mods: Command|Shift, action: IncreaseFontSize }
+  - { key: Minus, mods: Command|Shift, action: DecreaseFontSize }
 
 # Colors (Terminal.app)
 # https://clcode.net/articles/color-schemes.md
