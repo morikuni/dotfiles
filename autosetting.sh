@@ -31,12 +31,15 @@ done
 
 mkdir -p ~/.config/fish/functions
 mkdir -p ~/.config/alacritty
+mkdir -p ~/.config/karabiner
+
 
 #.configディレクトリに配置するもの
 configfiles=(
 fish/functions/*
 fish/config.fish
 alacritty/alacritty.yml
+karabiner/karabiner.json
 )
 for configfile in ${configfiles[@]}
 do

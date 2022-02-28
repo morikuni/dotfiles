@@ -33,6 +33,7 @@ if [ "$(uname)" == "Darwin" ]; then
         krisp \
         android-studio \
         alacritty \
+        karabiner-elements \
         homebrew/cask-drivers/elgato-stream-deck
 
     # Translate Tab
