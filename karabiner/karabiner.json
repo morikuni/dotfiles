@@ -70,6 +70,9 @@
                                         "mandatory": [
                                             "control",
                                             "command"
+                                        ],
+                                        "optional": [
+                                            "any"
                                         ]
                                     }
                                 },
@@ -87,6 +90,9 @@
                                         "mandatory": [
                                             "control",
                                             "command"
+                                        ],
+                                        "optional": [
+                                            "any"
                                         ]
                                     }
                                 },
@@ -104,6 +110,9 @@
                                         "mandatory": [
                                             "control",
                                             "command"
+                                        ],
+                                        "optional": [
+                                            "any"
                                         ]
                                     }
                                 },
@@ -121,6 +130,9 @@
                                         "mandatory": [
                                             "control",
                                             "command"
+                                        ],
+                                        "optional": [
+                                            "any"
                                         ]
                                     }
                                 },
