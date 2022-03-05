@@ -80,6 +80,8 @@ nnoremap - ^
 vnoremap - ^
 nnoremap ^ $
 vnoremap ^ $
+nnoremap = $
+vnoremap = $
 
 "インサートモードでemacsっぽく
 inoremap <C-a> <Home>
