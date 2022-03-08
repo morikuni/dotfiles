@@ -37,7 +37,7 @@
                         ]
                     },
                     {
-                        "description": "コマンドキーを単体で押したときに、英数・かなキーを送信する。（左コマンドキーは英数、右コマンドキーはかな） (rev 3)",
+                        "description": "command to kana/eisuu",
                         "manipulators": [
                             {
                                 "from": {
@@ -49,6 +49,7 @@
                                     }
                                 },
                                 "parameters": {
+                                    "basic.to_if_alone_threshold_milliseconds": 10,
                                     "basic.to_if_held_down_threshold_milliseconds": 100
                                 },
                                 "to": [
@@ -79,7 +80,8 @@
                                     }
                                 },
                                 "parameters": {
-                                    "basic.to_if_held_down_threshold_milliseconds": 10
+                                    "basic.to_if_alone_threshold_milliseconds": 10,
+                                    "basic.to_if_held_down_threshold_milliseconds": 100
                                 },
                                 "to": [
                                     {
