@@ -79,7 +79,7 @@
                                     }
                                 },
                                 "parameters": {
-                                    "basic.to_if_held_down_threshold_milliseconds": 100
+                                    "basic.to_if_held_down_threshold_milliseconds": 10
                                 },
                                 "to": [
                                     {
@@ -176,6 +176,25 @@
                                 "to": [
                                     {
                                         "key_code": "right_arrow"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "right_shift to esc",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "right_shift"
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "escape"
+                                    },
+                                    {
+                                        "key_code": "japanese_eisuu"
                                     }
                                 ],
                                 "type": "basic"
@@ -336,16 +355,6 @@
                             "key_code": "left_control"
                         }
                     ]
-                },
-                {
-                    "from": {
-                        "key_code": "left_control"
-                    },
-                    "to": [
-                        {
-                            "key_code": "escape"
-                        }
-                    ]
                 }
             ],
             "virtual_hid_keyboard": {
@@ -356,3 +365,4 @@
         }
     ]
 }
+
