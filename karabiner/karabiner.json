@@ -49,7 +49,7 @@
                                     }
                                 },
                                 "parameters": {
-                                    "basic.to_if_alone_timeout_milliseconds": 100,
+                                    "basic.to_if_alone_timeout_milliseconds": 300,
                                     "basic.to_if_held_down_threshold_milliseconds": 100
                                 },
                                 "to": [
@@ -80,7 +80,7 @@
                                     }
                                 },
                                 "parameters": {
-                                    "basic.to_if_alone_timeout_milliseconds": 100,
+                                    "basic.to_if_alone_timeout_milliseconds": 300,
                                     "basic.to_if_held_down_threshold_milliseconds": 100
                                 },
                                 "to": [
@@ -178,6 +178,89 @@
                                 "to": [
                                     {
                                         "key_code": "right_arrow"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "delay command+h/w/q shortcut",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "h",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "command"
+                                        ],
+                                        "optional": [
+                                            "caps_lock"
+                                        ]
+                                    }
+                                },
+                                "parameters": {
+                                    "basic.to_if_held_down_threshold_milliseconds": 150
+                                },
+                                "to_if_held_down": [
+                                    {
+                                        "key_code": "h",
+                                        "modifiers": [
+                                            "left_command"
+                                        ],
+                                        "repeat": false
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "w",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "command"
+                                        ],
+                                        "optional": [
+                                            "caps_lock"
+                                        ]
+                                    }
+                                },
+                                "parameters": {
+                                    "basic.to_if_held_down_threshold_milliseconds": 150
+                                },
+                                "to_if_held_down": [
+                                    {
+                                        "key_code": "w",
+                                        "modifiers": [
+                                            "left_command"
+                                        ],
+                                        "repeat": false
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "q",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "command"
+                                        ],
+                                        "optional": [
+                                            "caps_lock"
+                                        ]
+                                    }
+                                },
+                                "parameters": {
+                                    "basic.to_if_held_down_threshold_milliseconds": 150
+                                },
+                                "to_if_held_down": [
+                                    {
+                                        "key_code": "q",
+                                        "modifiers": [
+                                            "left_command"
+                                        ],
+                                        "repeat": false
                                     }
                                 ],
                                 "type": "basic"
