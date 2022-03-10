@@ -200,7 +200,7 @@
                                     }
                                 },
                                 "parameters": {
-                                    "basic.to_if_held_down_threshold_milliseconds": 150
+                                    "basic.to_if_held_down_threshold_milliseconds": 100
                                 },
                                 "to_if_held_down": [
                                     {
@@ -226,7 +226,7 @@
                                     }
                                 },
                                 "parameters": {
-                                    "basic.to_if_held_down_threshold_milliseconds": 150
+                                    "basic.to_if_held_down_threshold_milliseconds": 100
                                 },
                                 "to_if_held_down": [
                                     {
@@ -252,7 +252,7 @@
                                     }
                                 },
                                 "parameters": {
-                                    "basic.to_if_held_down_threshold_milliseconds": 150
+                                    "basic.to_if_held_down_threshold_milliseconds": 100
                                 },
                                 "to_if_held_down": [
                                     {
