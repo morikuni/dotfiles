@@ -118,61 +118,6 @@
                         ]
                     },
                     {
-                        "description": "command to kana/eisuu",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "left_command",
-                                    "modifiers": {
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "parameters": {
-                                    "basic.to_if_alone_timeout_milliseconds": 300,
-                                    "basic.to_if_held_down_threshold_milliseconds": 50
-                                },
-                                "to_if_alone": [
-                                    {
-                                        "key_code": "japanese_eisuu"
-                                    }
-                                ],
-                                "to_if_held_down": [
-                                    {
-                                        "key_code": "left_command"
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "right_command",
-                                    "modifiers": {
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "parameters": {
-                                    "basic.to_if_alone_timeout_milliseconds": 300,
-                                    "basic.to_if_held_down_threshold_milliseconds": 50
-                                },
-                                "to_if_alone": [
-                                    {
-                                        "key_code": "japanese_kana"
-                                    }
-                                ],
-                                "to_if_held_down": [
-                                    {
-                                        "key_code": "right_command"
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
                         "description": "delay command+h/w/q shortcut",
                         "manipulators": [
                             {
@@ -240,7 +185,7 @@
                                     }
                                 },
                                 "parameters": {
-                                    "basic.to_if_held_down_threshold_milliseconds": 100
+                                    "basic.to_if_held_down_threshold_milliseconds": 200
                                 },
                                 "to_if_held_down": [
                                     {
@@ -249,6 +194,71 @@
                                             "left_command"
                                         ],
                                         "repeat": false
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "command to kana/eisuu",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "left_command",
+                                    "modifiers": {
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "parameters": {
+                                    "basic.to_if_alone_timeout_milliseconds": 300,
+                                    "basic.to_if_held_down_threshold_milliseconds": 50
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "left_command"
+                                    }
+                                ],
+                                "to_if_alone": [
+                                    {
+                                        "key_code": "japanese_eisuu"
+                                    }
+                                ],
+                                "to_if_held_down": [
+                                    {
+                                        "key_code": "left_command"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "right_command",
+                                    "modifiers": {
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "parameters": {
+                                    "basic.to_if_alone_timeout_milliseconds": 300,
+                                    "basic.to_if_held_down_threshold_milliseconds": 50
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "right_command"
+                                    }
+                                ],
+                                "to_if_alone": [
+                                    {
+                                        "key_code": "japanese_kana"
+                                    }
+                                ],
+                                "to_if_held_down": [
+                                    {
+                                        "key_code": "right_command"
                                     }
                                 ],
                                 "type": "basic"
