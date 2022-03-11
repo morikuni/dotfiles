@@ -126,9 +126,6 @@
                                     "modifiers": {
                                         "mandatory": [
                                             "command"
-                                        ],
-                                        "optional": [
-                                            "caps_lock"
                                         ]
                                     }
                                 },
@@ -139,9 +136,8 @@
                                     {
                                         "key_code": "h",
                                         "modifiers": [
-                                            "left_command"
-                                        ],
-                                        "repeat": false
+                                            "command"
+                                        ]
                                     }
                                 ],
                                 "type": "basic"
@@ -152,9 +148,6 @@
                                     "modifiers": {
                                         "mandatory": [
                                             "command"
-                                        ],
-                                        "optional": [
-                                            "caps_lock"
                                         ]
                                     }
                                 },
@@ -165,9 +158,8 @@
                                     {
                                         "key_code": "w",
                                         "modifiers": [
-                                            "left_command"
-                                        ],
-                                        "repeat": false
+                                            "command"
+                                        ]
                                     }
                                 ],
                                 "type": "basic"
@@ -178,9 +170,6 @@
                                     "modifiers": {
                                         "mandatory": [
                                             "command"
-                                        ],
-                                        "optional": [
-                                            "caps_lock"
                                         ]
                                     }
                                 },
@@ -191,9 +180,8 @@
                                     {
                                         "key_code": "q",
                                         "modifiers": [
-                                            "left_command"
-                                        ],
-                                        "repeat": false
+                                            "command"
+                                        ]
                                     }
                                 ],
                                 "type": "basic"
