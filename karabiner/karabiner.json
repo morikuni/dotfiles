@@ -50,14 +50,8 @@
                                 },
                                 "parameters": {
                                     "basic.to_if_alone_timeout_milliseconds": 300,
-                                    "basic.to_if_held_down_threshold_milliseconds": 100
+                                    "basic.to_if_held_down_threshold_milliseconds": 70
                                 },
-                                "to": [
-                                    {
-                                        "key_code": "left_command",
-                                        "lazy": true
-                                    }
-                                ],
                                 "to_if_alone": [
                                     {
                                         "key_code": "japanese_eisuu"
@@ -81,14 +75,8 @@
                                 },
                                 "parameters": {
                                     "basic.to_if_alone_timeout_milliseconds": 300,
-                                    "basic.to_if_held_down_threshold_milliseconds": 100
+                                    "basic.to_if_held_down_threshold_milliseconds": 70
                                 },
-                                "to": [
-                                    {
-                                        "key_code": "right_command",
-                                        "lazy": true
-                                    }
-                                ],
                                 "to_if_alone": [
                                     {
                                         "key_code": "japanese_kana"
@@ -200,7 +188,7 @@
                                     }
                                 },
                                 "parameters": {
-                                    "basic.to_if_held_down_threshold_milliseconds": 100
+                                    "basic.to_if_held_down_threshold_milliseconds": 2000
                                 },
                                 "to_if_held_down": [
                                     {
