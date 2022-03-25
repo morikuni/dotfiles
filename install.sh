@@ -56,5 +56,7 @@ if [ "$(uname)" == "Darwin" ]; then
     mas install 445189367
     # Spark
     mas install 1176895641
+    # WiFi Explorer
+    mas install 494803304
 fi
 
