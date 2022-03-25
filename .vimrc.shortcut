@@ -1,6 +1,6 @@
 
 "Esc二回でハイライトを無効化
-nnoremap _ :nohlsearch<CR>
+nnoremap <ESC><ESC> :nohlsearch<CR>
 
 "前回のインサートテキストを貼り付けを無効化
 inoremap <C-@> <NOP>
