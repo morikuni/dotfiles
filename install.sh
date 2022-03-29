@@ -1,4 +1,5 @@
 brew install \
+    trash \
     fish \
     tmux \
     fzf \

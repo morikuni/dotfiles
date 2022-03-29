@@ -1,8 +1,8 @@
 # 安全に
 alias cp "cp -i"
 alias mv "mv -i"
-if which rmtrash > /dev/null 2>&1
-	alias rm "rmtrash"
+if which trash > /dev/null 2>&1
+	alias rm "trash -F"
 end
 
 # ENV
