@@ -34,6 +34,8 @@ if [ "$(uname)" == "Darwin" ]; then
         1password/tap/1password-cli \
         google-drive \
         deepl \
+        zoom \
+        logitech-g-hub \
         elgato-stream-deck
 
     # Translate Tab
