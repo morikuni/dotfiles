@@ -31,7 +31,9 @@ if [ "$(uname)" == "Darwin" ]; then
         alacritty \
         karabiner-elements \
         bartender \
-        homebrew/cask-drivers/elgato-stream-deck
+        1password/tap/1password-cli \
+        google-drive \
+        elgato-stream-deck
 
     # Translate Tab
     mas install 458887729
@@ -55,5 +57,13 @@ if [ "$(uname)" == "Darwin" ]; then
     mas install 1176895641
     # WiFi Explorer
     mas install 494803304
+    # Affinity Designer
+    mas install 824171161
+    # Affinity Photo
+    mas install 824183456
+    # Dark Reader for Safari 
+    mas install 1438243180
+    # GoodNotes 5
+    mas install 1444383602
 fi
 
