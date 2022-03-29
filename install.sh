@@ -19,19 +19,15 @@ if [ "$(uname)" == "Darwin" ]; then
         bettertouchtool \
         alfred \
         jetbrains-toolbox \
-        dropbox \
         homebrew/cask-fonts/font-fira-code \
         slack \
         fork \
-        iterm2 \
         google-cloud-sdk \
         docker \
         paw \
-        jasper \
         discord \
         stats \
         krisp \
-        android-studio \
         alacritty \
         karabiner-elements \
         homebrew/cask-drivers/elgato-stream-deck
