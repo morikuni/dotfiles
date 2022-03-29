@@ -14,12 +14,12 @@ scrolling:
   history: 10000
 
 font:
-  size: 12
+  size: 14
   normal:
-    family: "Fira Code"
+    family: "UDEV Gothic JPDOC"
     style: Regular
   bold:
-    family: "Fira Code"
+    family: "UDEV Gothic JPDOC"
     style: Bold
 
 key_bindings:
