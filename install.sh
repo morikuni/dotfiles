@@ -11,6 +11,7 @@ brew install \
     jq \
     direnv \
     yarn \
+    mas \
     make
 
 if [ "$(uname)" == "Darwin" ]; then
@@ -20,7 +21,6 @@ if [ "$(uname)" == "Darwin" ]; then
         jetbrains-toolbox \
         dropbox \
         homebrew/cask-fonts/font-fira-code \
-        kindle \
         slack \
         fork \
         iterm2 \
