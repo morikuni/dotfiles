@@ -12,6 +12,7 @@ brew install \
     direnv \
     yarn \
     mas \
+    kubectl \
     make
 
 if [ "$(uname)" == "Darwin" ]; then
