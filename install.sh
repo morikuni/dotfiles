@@ -42,7 +42,7 @@ if [ "$(uname)" == "Darwin" ]; then
     # 1Password 7
     mas install 1333542190
     # Tweetbot
-    mas install 557168941
+    mas install 1384080005
     # Fantastical 2
     mas install 975937182
     # Soulver
