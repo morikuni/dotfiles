@@ -65,11 +65,13 @@ if [ "$(uname)" == "Darwin" ]; then
     mas install 824171161
     # Affinity Photo
     mas install 824183456
-    # Dark Reader for Safari 
+    # Dark Reader for Safari
     mas install 1438243180
     # GoodNotes 5
     mas install 1444383602
     # Things 3
     mas install 904280696
+    # 辞書 by 物書堂
+    mas install 1380563956
 fi
 
