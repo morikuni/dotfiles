@@ -33,6 +33,7 @@ if [ "$(uname)" == "Darwin" ]; then
         bartender \
         1password/tap/1password-cli \
         google-drive \
+        deepl \
         elgato-stream-deck
 
     # Translate Tab
@@ -65,5 +66,7 @@ if [ "$(uname)" == "Darwin" ]; then
     mas install 1438243180
     # GoodNotes 5
     mas install 1444383602
+    # Things 3
+    mas install 904280696
 fi
 
