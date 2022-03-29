@@ -1,6 +1,5 @@
 brew install \
     fish \
-    rmtrash \
     tmux \
     fzf \
     mas \
@@ -31,6 +30,7 @@ if [ "$(uname)" == "Darwin" ]; then
         krisp \
         alacritty \
         karabiner-elements \
+        bartender \
         homebrew/cask-drivers/elgato-stream-deck
 
     # Translate Tab
