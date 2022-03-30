@@ -73,5 +73,7 @@ if [ "$(uname)" == "Darwin" ]; then
     mas install 904280696
     # 辞書 by 物書堂
     mas install 1380563956
+    # Deliveries
+    mas install 290986013
 fi
 
