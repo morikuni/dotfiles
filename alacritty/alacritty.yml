@@ -16,10 +16,10 @@ scrolling:
 font:
   size: 14
   normal:
-    family: "UDEV Gothic JPDOC"
+    family: "PlemolJP"
     style: Regular
   bold:
-    family: "UDEV Gothic JPDOC"
+    family: "PlemolJP"
     style: Bold
 
 key_bindings:
