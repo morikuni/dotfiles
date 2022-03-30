@@ -118,7 +118,7 @@
                         ]
                     },
                     {
-                        "description": "delay command+h/w/q shortcut",
+                        "description": "delay command shortcuts",
                         "manipulators": [
                             {
                                 "from": {
@@ -135,6 +135,28 @@
                                 "to_if_held_down": [
                                     {
                                         "key_code": "h",
+                                        "modifiers": [
+                                            "command"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "m",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "command"
+                                        ]
+                                    }
+                                },
+                                "parameters": {
+                                    "basic.to_if_held_down_threshold_milliseconds": 2000
+                                },
+                                "to_if_held_down": [
+                                    {
+                                        "key_code": "m",
                                         "modifiers": [
                                             "command"
                                         ]
