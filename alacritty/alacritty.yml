@@ -16,10 +16,10 @@ scrolling:
 font:
   size: 14
   normal:
-    family: "PlemolJP"
-    style: Regular
+    family: "PlemolJP Console NF"
+    style: Text
   bold:
-    family: "PlemolJP"
+    family: "PlemolJP Console NF"
     style: Bold
 
 key_bindings:
