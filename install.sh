@@ -37,6 +37,7 @@ if [ "$(uname)" == "Darwin" ]; then
         deepl \
         zoom \
         logitech-g-hub \
+        dash \
         elgato-stream-deck
 
     # Translate Tab
