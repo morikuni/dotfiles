@@ -29,19 +29,15 @@ do
 	ln -sf ~/dotfiles/$dotfile ~/$dotfile
 done
 
-mkdir -p ~/.config/fish/functions
-mkdir -p ~/.config/alacritty
-
 #.configディレクトリに配置するもの
 configfiles=(
-fish/functions/*
-fish/config.fish
-alacritty/alacritty.yml
+fish
+alacritty
 karabiner
 )
 for configfile in ${configfiles[@]}
 do
-	ln -sf ~/dotfiles/$configfile ~/.config/$configfile
+	ln -sf ~/dotfiles/$configfile ~/.config/
 done
 
 ln -sf ~/Library/Mobile\ Documents/com\~apple\~CloudDocs/ ~/iCloud
