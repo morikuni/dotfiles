@@ -8,7 +8,7 @@
         {
             "complex_modifications": {
                 "parameters": {
-                    "basic.simultaneous_threshold_milliseconds": 50,
+                    "basic.simultaneous_threshold_milliseconds": 100,
                     "basic.to_delayed_action_delay_milliseconds": 500,
                     "basic.to_if_alone_timeout_milliseconds": 500,
                     "basic.to_if_held_down_threshold_milliseconds": 500,
@@ -39,6 +39,101 @@
                     {
                         "description": "Change right_command+hjkl to arrow keys",
                         "manipulators": [
+                            {
+                                "from": {
+                                    "modifiers": {
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    },
+                                    "simultaneous": [
+                                        {
+                                            "key_code": "h"
+                                        },
+                                        {
+                                            "key_code": "right_command"
+                                        }
+                                    ]
+                                },
+                                "parameters": {
+                                    "basic.to_if_held_down_threshold_milliseconds": 1000
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "left_arrow"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "modifiers": {
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    },
+                                    "simultaneous": [
+                                        {
+                                            "key_code": "j"
+                                        },
+                                        {
+                                            "key_code": "right_command"
+                                        }
+                                    ]
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "down_arrow"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "modifiers": {
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    },
+                                    "simultaneous": [
+                                        {
+                                            "key_code": "k"
+                                        },
+                                        {
+                                            "key_code": "right_command"
+                                        }
+                                    ]
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "up_arrow"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "modifiers": {
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    },
+                                    "simultaneous": [
+                                        {
+                                            "key_code": "l"
+                                        },
+                                        {
+                                            "key_code": "right_command"
+                                        }
+                                    ]
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "right_arrow"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
                             {
                                 "from": {
                                     "key_code": "h",
@@ -130,7 +225,7 @@
                                     }
                                 },
                                 "parameters": {
-                                    "basic.to_if_held_down_threshold_milliseconds": 2000
+                                    "basic.to_if_held_down_threshold_milliseconds": 1000
                                 },
                                 "to_if_held_down": [
                                     {
@@ -152,77 +247,11 @@
                                     }
                                 },
                                 "parameters": {
-                                    "basic.to_if_held_down_threshold_milliseconds": 2000
+                                    "basic.to_if_held_down_threshold_milliseconds": 1000
                                 },
                                 "to_if_held_down": [
                                     {
                                         "key_code": "m",
-                                        "modifiers": [
-                                            "command"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "w",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "command"
-                                        ]
-                                    }
-                                },
-                                "parameters": {
-                                    "basic.to_if_held_down_threshold_milliseconds": 100
-                                },
-                                "to_if_held_down": [
-                                    {
-                                        "key_code": "w",
-                                        "modifiers": [
-                                            "command"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "n",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "command"
-                                        ]
-                                    }
-                                },
-                                "parameters": {
-                                    "basic.to_if_held_down_threshold_milliseconds": 100
-                                },
-                                "to_if_held_down": [
-                                    {
-                                        "key_code": "n",
-                                        "modifiers": [
-                                            "command"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "q",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "command"
-                                        ]
-                                    }
-                                },
-                                "parameters": {
-                                    "basic.to_if_held_down_threshold_milliseconds": 200
-                                },
-                                "to_if_held_down": [
-                                    {
-                                        "key_code": "q",
                                         "modifiers": [
                                             "command"
                                         ]
@@ -237,22 +266,28 @@
                         "manipulators": [
                             {
                                 "from": {
-                                    "key_code": "left_command",
+                                    "key_code": "command",
                                     "modifiers": {
                                         "optional": [
                                             "any"
                                         ]
                                     }
                                 },
-                                "parameters": {
-                                    "basic.to_if_alone_timeout_milliseconds": 500,
-                                    "basic.to_if_held_down_threshold_milliseconds": 50
-                                },
                                 "to": [
                                     {
-                                        "key_code": "left_command"
+                                        "key_code": "command"
                                     }
                                 ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "left_command"
+                                },
+                                "parameters": {
+                                    "basic.to_if_alone_timeout_milliseconds": 500,
+                                    "basic.to_if_held_down_threshold_milliseconds": 80
+                                },
                                 "to_if_alone": [
                                     {
                                         "key_code": "japanese_eisuu"
@@ -267,22 +302,12 @@
                             },
                             {
                                 "from": {
-                                    "key_code": "right_command",
-                                    "modifiers": {
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
+                                    "key_code": "right_command"
                                 },
                                 "parameters": {
                                     "basic.to_if_alone_timeout_milliseconds": 300,
-                                    "basic.to_if_held_down_threshold_milliseconds": 50
+                                    "basic.to_if_held_down_threshold_milliseconds": 80
                                 },
-                                "to": [
-                                    {
-                                        "key_code": "right_command"
-                                    }
-                                ],
                                 "to_if_alone": [
                                     {
                                         "key_code": "japanese_kana"
