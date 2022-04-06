@@ -266,6 +266,27 @@
                         "manipulators": [
                             {
                                 "from": {
+                                    "simultaneous": [
+                                        {
+                                            "key_code": "return_or_enter"
+                                        },
+                                        {
+                                            "key_code": "left_command"
+                                        }
+                                    ]
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "return_or_enter",
+                                        "modifiers": [
+                                            "command"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
                                     "key_code": "command",
                                     "modifiers": {
                                         "optional": [
