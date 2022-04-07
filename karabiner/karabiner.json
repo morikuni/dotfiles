@@ -192,7 +192,7 @@
                             },
                             {
                                 "from": {
-                                    "key_code": "command",
+                                    "key_code": "right_command",
                                     "modifiers": {
                                         "optional": [
                                             "any"
@@ -201,7 +201,23 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "command"
+                                        "key_code": "right_command"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "left_command",
+                                    "modifiers": {
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "left_command"
                                     }
                                 ],
                                 "type": "basic"
