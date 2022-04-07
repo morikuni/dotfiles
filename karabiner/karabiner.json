@@ -16,6 +16,31 @@
                 },
                 "rules": [
                     {
+                        "description": "play sound on copy",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "c",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "command"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "c",
+                                        "modifiers": ["command"]
+                                    },
+                                    {
+                                        "shell_command": "osascript -e beep"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
                         "description": "ctrl+h to delete",
                         "manipulators": [
                             {
