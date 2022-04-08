@@ -57,8 +57,8 @@ call neobundle#begin(expand('~/.vim/bundle/'))
     " fish syntax
     NeoBundle 'dag/vim-fish'
 
-    " splidity
-    NeoBundle 'tomlion/vim-solidity'
+    " GraphQL syntax
+    NeoBundle 'jparise/vim-graphql'
 
 call neobundle#end()
 
