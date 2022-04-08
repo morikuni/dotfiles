@@ -207,6 +207,72 @@
                                     }
                                 ],
                                 "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "d",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "command"
+                                        ]
+                                    }
+                                },
+                                "parameters": {
+                                    "basic.to_if_held_down_threshold_milliseconds": 150
+                                },
+                                "to_if_held_down": [
+                                    {
+                                        "key_code": "d",
+                                        "modifiers": [
+                                            "command"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "s",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "command"
+                                        ]
+                                    }
+                                },
+                                "parameters": {
+                                    "basic.to_if_held_down_threshold_milliseconds": 150
+                                },
+                                "to_if_held_down": [
+                                    {
+                                        "key_code": "s",
+                                        "modifiers": [
+                                            "command"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "n",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "command"
+                                        ]
+                                    }
+                                },
+                                "parameters": {
+                                    "basic.to_if_held_down_threshold_milliseconds": 150
+                                },
+                                "to_if_held_down": [
+                                    {
+                                        "key_code": "n",
+                                        "modifiers": [
+                                            "command"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
                             }
                         ]
                     },
@@ -217,9 +283,11 @@
                                 "from": {
                                     "key_code": "left_command"
                                 },
-                                "parameters": {
-                                    "basic.to_if_held_down_threshold_milliseconds": 50
-                                },
+                                "to": [
+                                    {
+                                        "key_code": "left_command"
+                                    }
+                                ],
                                 "to_if_alone": [
                                     {
                                         "key_code": "japanese_eisuu"
@@ -236,9 +304,11 @@
                                 "from": {
                                     "key_code": "right_command"
                                 },
-                                "parameters": {
-                                    "basic.to_if_held_down_threshold_milliseconds": 40
-                                },
+                                "to": [
+                                    {
+                                        "key_code": "right_command"
+                                    }
+                                ],
                                 "to_if_alone": [
                                     {
                                         "key_code": "japanese_kana"
