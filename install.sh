@@ -13,6 +13,7 @@ brew install \
     yarn \
     mas \
     kubectl \
+    ngrok \
     make
 
 if [ "$(uname)" == "Darwin" ]; then
@@ -76,5 +77,7 @@ if [ "$(uname)" == "Darwin" ]; then
     mas install 1380563956
     # Deliveries
     mas install 290986013
+    # Noir
+    mas install 1592844577
 fi
 
