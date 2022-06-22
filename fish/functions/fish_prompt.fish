@@ -22,15 +22,6 @@ function fish_prompt
         set_color normal
     end
 
-    kubectl config get-contexts \
-    | grep '*' \
-    | read current name cluster authinfo namespace
-    set name (echo -n "$name" | tr -d ' ')
-    set namespace (echo -n "$namespace" | tr -d ' ')
-    set_color green
-    printf '%s.%s' $name $namespace
-    set_color normal
-
     echo
     printf $status_color
     printf '$ '
