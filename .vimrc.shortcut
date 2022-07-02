@@ -21,3 +21,5 @@ noremap <C-h> 5h
 noremap <C-j> 5j
 noremap <C-k> 5k
 noremap <C-l> 5l
+
+nnoremap <expr> <C-]> execute('LspPeekDefinition') =~ "not supported" ? "\<C-]>" : ":LspDefinition<cr>"
