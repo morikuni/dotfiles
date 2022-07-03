@@ -37,9 +37,9 @@ if [ "$(uname)" == "Darwin" ]; then
         google-drive \
         deepl \
         zoom \
-        logitech-g-hub \
+        homebrew/cask-drivers/logitech-g-hub \
         dash \
-        elgato-stream-deck
+        homebrew/cask-drivers/elgato-stream-deck
 
     # Translate Tab
     mas install 458887729
@@ -47,8 +47,6 @@ if [ "$(uname)" == "Darwin" ]; then
     mas install 587512244
     # Moom
     mas install 419330170
-    # 1Password 7
-    mas install 1333542190
     # Tweetbot
     mas install 1384080005
     # Fantastical 2

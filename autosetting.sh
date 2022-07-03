@@ -29,6 +29,8 @@ do
 	ln -sf ~/dotfiles/$dotfile ~/$dotfile
 done
 
+mkdir ~/.config
+
 #.configディレクトリに配置するもの
 configfiles=(
 fish
