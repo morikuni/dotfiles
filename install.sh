@@ -39,6 +39,7 @@ if [ "$(uname)" == "Darwin" ]; then
         zoom \
         homebrew/cask-drivers/logitech-g-hub \
         dash \
+        brave-browser \
         homebrew/cask-drivers/elgato-stream-deck
 
     # Translate Tab
