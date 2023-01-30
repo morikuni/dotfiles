@@ -65,12 +65,15 @@ set smartindent
 "自動インデント幅
 set shiftwidth=4
 "インデント幅
-set softtabstop=4
+set softtabstop=4:q
+
 "タブ幅を設定
 set tabstop=4
 
 "Esc二回でハイライトを無効化
 nnoremap <ESC><ESC> :nohlsearch<CR>
+nnoremap <C-[><C-[> :nohlsearch<CR>
+nnoremap _ :nohlsearch<CR>
 
 "前回のインサートテキストを貼り付けを無効化
 inoremap <C-@> <NOP>
@@ -90,4 +93,5 @@ inoremap <C-e> <End>
 noremap <C-h> 5h
 noremap <C-j> 5j
 noremap <C-k> 5k
-noremap <C-l> 5l
+noremap <C-l> 5nl
+

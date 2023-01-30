@@ -1,6 +1,7 @@
 [user]
 	name = morikuni
 	email = taihei.with+git@gmail.com
+	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINQuF6A3ySfeS8Ya90HnGrameTi/YsvrAYiw4swgwURd
 
 [url "ssh://git@github.com/"]
 	insteadOf = https://github.com/
@@ -18,3 +19,9 @@
 	excludesfile = ~/.gitignore
 [include]
 	path = .gitconfig.os
+[gpg]
+	format = ssh
+[gpg "ssh"]
+	program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
+[commit]
+	gpgsign = true

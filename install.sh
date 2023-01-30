@@ -28,7 +28,6 @@ if [ "$(uname)" == "Darwin" ]; then
         docker \
         paw \
         discord \
-        stats \
         krisp \
         alacritty \
         karabiner-elements \
@@ -40,7 +39,11 @@ if [ "$(uname)" == "Darwin" ]; then
         homebrew/cask-drivers/logitech-g-hub \
         dash \
         brave-browser \
-        homebrew/cask-drivers/elgato-stream-deck
+        homebrew/cask-drivers/elgato-stream-deck \
+        jump-desktop-connect \
+        readdle-spark \
+        loopback \
+        ganache
 
     # Translate Tab
     mas install 458887729
@@ -76,5 +79,13 @@ if [ "$(uname)" == "Darwin" ]; then
     mas install 290986013
     # Noir
     mas install 1592844577
+    # Line
+    mas install 539883307
+    # Vinegar
+    mas install 1591303229
+    # Baking Soda
+    mas install 1601151613
+    # Plain Text Editor
+    mas install 1572202501
 fi
 
