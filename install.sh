@@ -21,7 +21,7 @@ if [ "$(uname)" == "Darwin" ]; then
         bettertouchtool \
         alfred \
         jetbrains-toolbox \
-        homebrew/cask-fonts/font-fira-code \
+        font-plemol-jp-nf \
         slack \
         fork \
         google-cloud-sdk \
@@ -32,6 +32,7 @@ if [ "$(uname)" == "Darwin" ]; then
         alacritty \
         karabiner-elements \
         bartender \
+        1password \
         1password/tap/1password-cli \
         google-drive \
         deepl \
