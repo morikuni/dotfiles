@@ -44,16 +44,14 @@ if [ "$(uname)" == "Darwin" ]; then
         jump-desktop-connect \
         readdle-spark \
         loopback \
+        atok \
+        adguard \
         ganache
 
-    # Translate Tab
-    mas install 458887729
     # Kaleidoscope
     mas install 587512244
     # Moom
     mas install 419330170
-    # Tweetbot
-    mas install 1384080005
     # Fantastical 2
     mas install 975937182
     # Soulver
@@ -88,5 +86,9 @@ if [ "$(uname)" == "Darwin" ]; then
     mas install 1601151613
     # Plain Text Editor
     mas install 1572202501
+    # Twitter
+    mas install 1482454543
+    # Reeder5
+    mas install 1529448980
 fi
 
