@@ -26,3 +26,4 @@ if which trash > /dev/null 2>&1
 	alias rm "trash -F"
 end
 
+source /opt/homebrew/opt/asdf/libexec/asdf.fish

@@ -14,6 +14,7 @@ brew install \
     mas \
     kubectl \
     ngrok \
+    asdf \
     make
 
 if [ "$(uname)" == "Darwin" ]; then
@@ -46,6 +47,7 @@ if [ "$(uname)" == "Darwin" ]; then
         loopback \
         atok \
         adguard \
+        dash \
         ganache
 
     # Kaleidoscope
