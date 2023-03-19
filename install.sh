@@ -48,6 +48,7 @@ if [ "$(uname)" == "Darwin" ]; then
         atok \
         adguard \
         dash \
+        cleanshot \
         ganache
 
     # Kaleidoscope
