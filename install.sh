@@ -51,8 +51,6 @@ if [ "$(uname)" == "Darwin" ]; then
         cleanshot \
         ganache
 
-    # Kaleidoscope
-    mas install 587512244
     # Moom
     mas install 419330170
     # Fantastical 2
