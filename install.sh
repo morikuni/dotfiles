@@ -91,5 +91,7 @@ if [ "$(uname)" == "Darwin" ]; then
     mas install 1482454543
     # Reeder5
     mas install 1529448980
+    # Snippety
+    mas install 1530751461
 fi
 
