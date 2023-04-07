@@ -2,19 +2,8 @@
 	name = morikuni
 	email = taihei.with+git@gmail.com
 	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINQuF6A3ySfeS8Ya90HnGrameTi/YsvrAYiw4swgwURd
-
 [url "ssh://git@github.com/"]
 	insteadOf = https://github.com/
-
-[diff]
-	tool = Kaleidoscope
-[difftool "Kaleidoscope"]
-	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
-[merge]
-	tool = Kaleidoscope
-[mergetool "Kaleidoscope"]
-	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
-	trustExitCode = true
 [core]
 	excludesfile = ~/.gitignore
 [include]
