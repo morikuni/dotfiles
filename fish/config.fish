@@ -8,7 +8,7 @@ case Linux
     eval (/home/linuxbrew/.linuxbrew/bin/brew shellenv)
 case Darwin
     eval (/opt/homebrew/bin/brew shellenv)
-	source /opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.fish.inc
+    source "$(brew --prefix)/share/google-cloud-sdk/path.fish.inc"
 end
 
 
