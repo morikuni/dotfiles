@@ -18,6 +18,7 @@ brew install \
     make
 
 if [ "$(uname)" == "Darwin" ]; then
+    brew tap homebrew/cask-fonts # for font-plemol-jp-nf
     brew install --cask \
         bettertouchtool \
         alfred \
