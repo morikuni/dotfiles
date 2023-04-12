@@ -48,8 +48,8 @@ if [ "$(uname)" == "Darwin" ]; then
         loopback \
         atok \
         adguard \
-        dash \
         cleanshot \
+        atok \
         ganache
 
     # Moom
@@ -76,8 +76,6 @@ if [ "$(uname)" == "Darwin" ]; then
     mas install 904280696
     # 辞書 by 物書堂
     mas install 1380563956
-    # Deliveries
-    mas install 290986013
     # Noir
     mas install 1592844577
     # Line
@@ -94,5 +92,7 @@ if [ "$(uname)" == "Darwin" ]; then
     mas install 1529448980
     # Snippety
     mas install 1530751461
+    # Deliveries
+    mas install 290986013
 fi
 
