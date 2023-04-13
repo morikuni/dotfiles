@@ -45,3 +45,7 @@ done
 ln -sf ~/Library/Mobile\ Documents/com\~apple\~CloudDocs/ ~/iCloud
 
 sh ~/dotfiles/install.sh
+
+if [ "$(uname)" == "Darwin" ]; then
+    defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
+fi
