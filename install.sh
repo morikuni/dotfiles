@@ -94,5 +94,7 @@ if [ "$(uname)" == "Darwin" ]; then
     mas install 1530751461
     # Deliveries
     mas install 290986013
+    # DaisyDisk
+    mas install 411643860
 fi
 
