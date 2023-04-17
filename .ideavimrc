@@ -93,5 +93,5 @@ inoremap <C-e> <End>
 noremap <C-h> 5h
 noremap <C-j> 5j
 noremap <C-k> 5k
-noremap <C-l> 5nl
+noremap <C-l> 5l
 
