@@ -1,6 +1,6 @@
 [user]
 	name = morikuni
-	email = taihei.with+git@gmail.com
+	email = swishy.studded_0n@icloud.com
 	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINQuF6A3ySfeS8Ya90HnGrameTi/YsvrAYiw4swgwURd
 [url "ssh://git@github.com/"]
 	insteadOf = https://github.com/
