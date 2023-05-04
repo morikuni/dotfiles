@@ -18,12 +18,11 @@ brew install \
     make
 
 if [ "$(uname)" == "Darwin" ]; then
-    brew tap homebrew/cask-fonts # for font-plemol-jp-nf
     brew install --cask \
         bettertouchtool \
         alfred \
         jetbrains-toolbox \
-        font-plemol-jp-nf \
+        homebrew/cask-fonts/font-plemol-jp-nf \
         slack \
         fork \
         google-cloud-sdk \
