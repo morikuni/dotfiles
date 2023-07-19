@@ -1,19 +1,25 @@
 function delete-merged-branches
     set merged_branches (git branch --merged main | string trim | string match -v "main")
-    echo "以下のブランチがmainにマージされています:"
+
+    if test (count $merged_branches) -eq 0
+        echo "There are no branches to delete."
+        return 1
+    end
+
+    echo "The following branches have been merged into main:"
     for branch in $merged_branches
         echo $branch
     end
-    echo "エンターキーを押すと、これらのブランチが削除されます。"
+    echo "Press the enter key to delete these branches."
 
-    read -l -P "削除を開始するにはエンターを押してください (Ctrl+Cでキャンセル): "
+    read -l -P "Press enter to start deletion (Ctrl+C to cancel): "
     if test $status -ne 0
-        echo "操作がキャンセルされました。"
+        echo "Operation has been cancelled."
         return 1
     end
 
     for branch in $merged_branches
         git branch -d $branch
-        echo $branch "を削除しました。"
+        echo $branch "has been deleted."
     end
 end

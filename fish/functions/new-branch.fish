@@ -1,4 +1,4 @@
-function git-newbranch -a base -a name
+function new-branch -a base -a name
     if test -z "$base" -o -z "$name"
         echo "git-newbranch [base] [name]"
         return 1
