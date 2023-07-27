@@ -1,5 +1,5 @@
 function delete-merged-branches
-    set merged_branches (git branch --merged main | string trim | string match -v "main")
+    set merged_branches (git branch --merged main | string trim | string match -v "main" | string match -v "* main")
 
     if test (count $merged_branches) -eq 0
         echo "There are no branches to delete."
@@ -8,7 +8,7 @@ function delete-merged-branches
 
     echo "The following branches have been merged into main:"
     for branch in $merged_branches
-        echo $branch
+        echo -e "\033[32m$branch\033[0m"
     end
     echo "Press the enter key to delete these branches."
 
