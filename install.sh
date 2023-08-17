@@ -12,7 +12,6 @@ brew install \
     direnv \
     yarn \
     mas \
-    kubectl \
     ngrok \
     asdf \
     make
@@ -42,14 +41,13 @@ if [ "$(uname)" == "Darwin" ]; then
         dash \
         brave-browser \
         homebrew/cask-drivers/elgato-stream-deck \
-        jump-desktop-connect \
         readdle-spark \
         loopback \
         atok \
         adguard \
         cleanshot \
         atok \
-        ganache
+        caldigit-docking-utility
 
     # Moom
     mas install 419330170
@@ -75,8 +73,6 @@ if [ "$(uname)" == "Darwin" ]; then
     mas install 904280696
     # 辞書 by 物書堂
     mas install 1380563956
-    # Noir
-    mas install 1592844577
     # Line
     mas install 539883307
     # Vinegar
