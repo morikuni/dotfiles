@@ -10,7 +10,6 @@ function delete-merged-branches
     for branch in $merged_branches
         echo -e "\033[32m$branch\033[0m"
     end
-    echo "Press the enter key to delete these branches."
 
     read -l -P "Press enter to start deletion (Ctrl+C to cancel): "
     if test $status -ne 0
