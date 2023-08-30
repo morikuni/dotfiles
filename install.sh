@@ -47,6 +47,7 @@ if [ "$(uname)" == "Darwin" ]; then
         adguard \
         cleanshot \
         atok \
+        contexts \
         caldigit-docking-utility
 
     # Moom
