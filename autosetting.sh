@@ -21,6 +21,7 @@ dotfiles=(
 .gitconfig
 .gitignore
 .ideavimrc
+.vscodevimrc
 .tmux.conf
 .zshrc
 )
