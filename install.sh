@@ -92,5 +92,7 @@ if [ "$(uname)" == "Darwin" ]; then
     mas install 290986013
     # DaisyDisk
     mas install 411643860
+    # Cardhop
+    mas install 1290358394
 fi
 
