@@ -13,8 +13,8 @@ end
 
 
 # PATH
-set -gx PATH ~/bin $PATH
-set -gx PATH $GOPATH/bin $PATH
+fish_add_path ~/bin
+fish_add_path $GOPATH/bin
 
 # direnv
 eval (direnv hook fish)
