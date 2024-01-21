@@ -48,6 +48,7 @@ if [ "$(uname)" == "Darwin" ]; then
         cleanshot \
         atok \
         contexts \
+        textsniper \
         caldigit-docking-utility
 
     # Moom
