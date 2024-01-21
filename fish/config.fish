@@ -2,6 +2,8 @@
 set -gx GOPATH ~/go
 set -gx EDITOR vim
 set -gx FZF_DEFAULT_COMMAND 'ag --hidden --ignore .git -g ""'
+set -gx LC_ALL ja_JP.UTF-8
+set -gx LANG ja_JP.UTF-8
 
 switch (uname)
 case Linux
