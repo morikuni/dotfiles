@@ -49,6 +49,7 @@ if [ "$(uname)" == "Darwin" ]; then
         atok \
         contexts \
         textsniper \
+        boom-3d \
         caldigit-docking-utility
 
     # Moom
