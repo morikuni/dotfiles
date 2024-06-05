@@ -50,6 +50,7 @@ if [ "$(uname)" == "Darwin" ]; then
         contexts \
         textsniper \
         boom-3d \
+        popclip \
         caldigit-docking-utility
 
     # Moom
