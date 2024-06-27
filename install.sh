@@ -51,6 +51,9 @@ if [ "$(uname)" == "Darwin" ]; then
         textsniper \
         boom-3d \
         popclip \
+        affinity-designer \
+        affinity-photo \
+        affinity-publisher \
         caldigit-docking-utility
 
     # Moom
@@ -67,10 +70,6 @@ if [ "$(uname)" == "Darwin" ]; then
     mas install 1176895641
     # WiFi Explorer
     mas install 494803304
-    # Affinity Designer
-    mas install 824171161
-    # Affinity Photo
-    mas install 824183456
     # GoodNotes 5
     mas install 1444383602
     # Things 3
