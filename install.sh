@@ -42,22 +42,22 @@ if [ "$(uname)" == "Darwin" ]; then
         brave-browser \
         homebrew/cask-drivers/elgato-stream-deck \
         readdle-spark \
-        loopback \
         atok \
         adguard \
         cleanshot \
         atok \
-        contexts \
         textsniper \
         boom-3d \
         popclip \
         affinity-designer \
         affinity-photo \
         affinity-publisher \
+        synology-drive \
+        notchnook \
+        moom \
+        keyboard-maestro \
         caldigit-docking-utility
 
-    # Moom
-    mas install 419330170
     # Fantastical 2
     mas install 975937182
     # Soulver
@@ -78,10 +78,6 @@ if [ "$(uname)" == "Darwin" ]; then
     mas install 1380563956
     # Line
     mas install 539883307
-    # Vinegar
-    mas install 1591303229
-    # Baking Soda
-    mas install 1601151613
     # Plain Text Editor
     mas install 1572202501
     # Twitter
